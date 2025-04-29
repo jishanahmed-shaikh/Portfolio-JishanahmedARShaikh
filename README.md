@@ -1,6 +1,7 @@
 # Portfolio - Jishanahmed AR Shaikh
 
-A modern, responsive portfolio website built with React, TypeScript, and Shadcn UI. 
+A modern, responsive portfolio website built with React, TypeScript, and Shadcn UI.
+
 This portfolio showcases my Professional Experience, Skills and Projects in a simple, elegant and interactive way.
 
 ## 🚀 Features
@@ -17,41 +18,68 @@ This portfolio showcases my Professional Experience, Skills and Projects in a si
 
 ## 🛠️ Technologies Used
 
-- **Frontend Framework:** React 18
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **UI Components:** Shadcn UI
-- **Animations:** Framer Motion
-- **Routing:** React Router DOM
-- **Form Handling:** React Hook Form
-- **State Management:** React Query
-- **Charts:** Recharts
-- **Build Tool:** Vite
+-**Frontend Framework:** React 18
+
+-**Language:** TypeScript
+
+-**Styling:** Tailwind CSS
+
+-**UI Components:** Shadcn UI
+
+-**Animations:** Framer Motion
+
+-**Routing:** React Router DOM
+
+-**Form Handling:** React Hook Form
+
+-**State Management:** React Query
+
+-**Charts:** Recharts
+
+-**Build Tool:** Vite
 
 ## 📦 Installation
 
 1. Clone the repository:
+
 ```bash
-git clone https://github.com/yourusername/Portfolio-JishanahmedARShaikh.git
-cd Portfolio-JishanahmedARShaikh
+
+gitclonehttps://github.com/yourusername/Portfolio-JishanahmedARShaikh.git
+
+cdPortfolio-JishanahmedARShaikh
+
 ```
 
 2. Install dependencies:
+
 ```bash
-npm install
+
+npminstall
+
 # or
-yarn install
+
+yarninstall
+
 # or
-bun install
+
+buninstall
+
 ```
 
 3. Start the development server:
+
 ```bash
-npm run dev
+
+npmrundev
+
 # or
-yarn dev
+
+yarndev
+
 # or
-bun dev
+
+bundev
+
 ```
 
 4. Open [http://localhost:5173](http://localhost:5173) in your browser.
@@ -59,22 +87,34 @@ bun dev
 ## 🏗️ Project Structure
 
 ```
+
 src/
+
 ├── components/     # Reusable UI components
+
 ├── hooks/         # Custom React hooks
+
 ├── lib/           # Utility functions and configurations
+
 ├── pages/         # Page components
+
 ├── App.tsx        # Main application component
+
 └── main.tsx       # Application entry point
+
 ```
 
 ## 📝 Available Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run build:dev` - Build for development
-- `npm run lint` - Run ESLint
-- `npm run preview` - Preview production build
+-`npm run dev` - Start development server
+
+-`npm run build` - Build for production
+
+-`npm run build:dev` - Build for development
+
+-`npm run lint` - Run ESLint
+
+-`npm run preview` - Preview production build
 
 ## 🎨 Customization
 
@@ -93,6 +133,6 @@ Feel free to reach out to me for any questions or opportunities!
 
 - Email: [shaikhjishan255@gmail.com](shaikhjishan255@gmail.com)
 - LinkedIn: [https://www.linkedin.com/in/jishanahmedshaikh](www.linkedin.com/in/jishanahmedshaikh)
-- All Profiles: [https://linktr.ee/jishanahmedshaikh](linktr.ee/jsihanahmedshaikh) 
+- All Profiles: [https://linktr.ee/jishanahmedshaikh](linktr.ee/jsihanahmedshaikh)
 
 ---
