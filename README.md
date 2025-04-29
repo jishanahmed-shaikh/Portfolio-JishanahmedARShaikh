@@ -106,6 +106,6 @@ Feel free to reach out to me for any questions or opportunities!
 
 - Email: [shaikhjishan255@gmail.com](shaikhjishan255@gmail.com)
 - LinkedIn: [https://www.linkedin.com/in/jishanahmedshaikh](www.linkedin.com/in/jishanahmedshaikh)
-- All Profiles: [https://linktr.ee/jishanahmedshaikh](linktr.ee/jsihanahmedshaikh)
+- All Profiles: [linktr.ee/jishanahmedshaikh](https://linktr.ee/jsihanahmedshaikh)
 
 ---
