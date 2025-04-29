@@ -114,11 +114,12 @@ const TicTacToe = () => {
           ref={constraintRef}
           style={{
             position: 'fixed',
-            top: 64, // navbar height
+            top: 0,
             left: 0,
             right: 0,
             bottom: 0,
-            zIndex: 9998,
+            pointerEvents: 'none',
+            zIndex: 50,
           }}
         >
           <motion.div
@@ -130,8 +131,14 @@ const TicTacToe = () => {
             dragListener={false}
             dragElastic={0.2}
             dragConstraints={constraintRef}
-            className="glass p-2 rounded-xl backdrop-blur-lg z-[9999] opacity-10"
-            style={{ touchAction: 'none', position: 'absolute', bottom: 16, left: 16 }}
+            className="glass p-2 rounded-xl backdrop-blur-lg opacity-10"
+            style={{ 
+              touchAction: 'none',
+              position: 'absolute',
+              bottom: 16,
+              left: 16,
+              pointerEvents: 'auto'
+            }}
           >
             <div
               className="text-xs font-semibold text-center text-white mb-1 w-full bg-black/40 rounded-t-md px-0 py-1 cursor-move select-none"
