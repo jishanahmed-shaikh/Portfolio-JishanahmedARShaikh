@@ -105,7 +105,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Feel free to reach out to me for any questions or opportunities!
 
 - Email: [shaikhjishan255@gmail.com](mailto:shaikhjishan255@gmail.com)
-- LinkedIn: [LinkedIn](www.linkedin.com/in/jishanahmedshaikh)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jishanahmedshaikh)
 - All Profiles: [Connect with Me](https://linktr.ee/jishanahmedshaikh)
 
 ---
