@@ -35,7 +35,7 @@ This portfolio showcases my Professional Experience, Skills and Projects in a si
 
 ```bash
 
-git clonehttps://github.com/yourusername/Portfolio-JishanahmedARShaikh.git
+git clone https://github.com/yourusername/Portfolio-JishanahmedARShaikh.git
 
 cd Portfolio-JishanahmedARShaikh
 
@@ -69,7 +69,7 @@ bun dev
 
 ```
 src/
-├── components/     # Reusable UI components
+├── components/    # Reusable UI components
 ├── hooks/         # Custom React hooks
 ├── lib/           # Utility functions and configurations
 ├── pages/         # Page components
@@ -80,9 +80,13 @@ src/
 ## 📝 Available Scripts
 
 -`npm run dev` - Start development server
+
 -`npm run build` - Build for production
+
 -`npm run build:dev` - Build for development
+
 -`npm run lint` - Run ESLint
+
 -`npm run preview` - Preview production build
 
 ## 🎨 Customization
