@@ -19,23 +19,14 @@ This portfolio showcases my Professional Experience, Skills and Projects in a si
 ## 🛠️ Technologies Used
 
 -**Frontend Framework:** React 18
-
--**Language:** TypeScript
-
+-**Programming Language:** TypeScript
 -**Styling:** Tailwind CSS
-
 -**UI Components:** Shadcn UI
-
 -**Animations:** Framer Motion
-
 -**Routing:** React Router DOM
-
 -**Form Handling:** React Hook Form
-
 -**State Management:** React Query
-
 -**Charts:** Recharts
-
 -**Build Tool:** Vite
 
 ## 📦 Installation
@@ -44,9 +35,9 @@ This portfolio showcases my Professional Experience, Skills and Projects in a si
 
 ```bash
 
-gitclonehttps://github.com/yourusername/Portfolio-JishanahmedARShaikh.git
+git clonehttps://github.com/yourusername/Portfolio-JishanahmedARShaikh.git
 
-cdPortfolio-JishanahmedARShaikh
+cd Portfolio-JishanahmedARShaikh
 
 ```
 
@@ -54,32 +45,22 @@ cdPortfolio-JishanahmedARShaikh
 
 ```bash
 
-npminstall
-
+npm install
 # or
-
-yarninstall
-
+yarn install
 # or
-
-buninstall
+bun install
 
 ```
 
 3. Start the development server:
 
 ```bash
-
-npmrundev
-
+npm run dev
 # or
-
-yarndev
-
+yarn dev
 # or
-
-bundev
-
+bun dev
 ```
 
 4. Open [http://localhost:5173](http://localhost:5173) in your browser.
@@ -87,33 +68,21 @@ bundev
 ## 🏗️ Project Structure
 
 ```
-
 src/
-
 ├── components/     # Reusable UI components
-
 ├── hooks/         # Custom React hooks
-
 ├── lib/           # Utility functions and configurations
-
 ├── pages/         # Page components
-
 ├── App.tsx        # Main application component
-
 └── main.tsx       # Application entry point
-
 ```
 
 ## 📝 Available Scripts
 
 -`npm run dev` - Start development server
-
 -`npm run build` - Build for production
-
 -`npm run build:dev` - Build for development
-
 -`npm run lint` - Run ESLint
-
 -`npm run preview` - Preview production build
 
 ## 🎨 Customization
