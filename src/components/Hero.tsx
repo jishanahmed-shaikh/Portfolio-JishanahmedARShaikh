@@ -147,7 +147,7 @@ const Hero = () => {
            AI & Cloud Engineer | Tech. Creator | Full Stack Developer | Entrepreneur |
           </p>
           <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            Technology Visionary with expertise in AI Engineering and Cloud Computing with proven 
+            Experienced Technology Visionary with expertise in AI Engineering and Cloud Computing with proven 
             experience in Business Leadership, Operations and Community Development.
             Passionate about driving innovation through technological and business skills
             to foster individual and collective growth.
