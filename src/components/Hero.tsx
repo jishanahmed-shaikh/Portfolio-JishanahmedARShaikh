@@ -144,12 +144,13 @@ const Hero = () => {
             Jishanahmed AR Shaikh
           </h1>
           <p className="text-xl md:text-2xl text-blue-300 font-semibold mb-4">
-            Cloud Engineer | Tech. Leader | Creator | Entrepreneur |
+           AI & Cloud Engineer | Tech. Creator | Full Stack Developer | Entrepreneur |
           </p>
           <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            Technology visionary with expertise in Cloud Computing and Business Leadership.
-            Passionate about driving innovation through AR Development, Embedded Systems, 
-            and fostering growth in technical communities.
+            Technology Visionary with expertise in AI Engineering and Cloud Computing with proven 
+            experience in Business Leadership, Operations and Community Development.
+            Passionate about driving innovation through technological and business skills
+            to foster individual and collective growth.
           </p>
           <div className="flex gap-6 justify-center mb-8">
             {socialLinks.map((link) => (
