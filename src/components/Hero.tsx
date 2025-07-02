@@ -144,7 +144,7 @@ const Hero = () => {
             Jishanahmed AR Shaikh
           </h1>
           <p className="text-xl md:text-2xl text-blue-300 font-semibold mb-4">
-           AI & Cloud Engineer | Tech. Creator | Full Stack Developer | Entrepreneur |
+           AI & Cloud Engineer | Tech. Creator | Full Stack Developer Entrepreneur | Partnerships | Product Growth
           </p>
           <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
             Experienced Technology Visionary with expertise in AI Engineering and Cloud Computing with proven 
