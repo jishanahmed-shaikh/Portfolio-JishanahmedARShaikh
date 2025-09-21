@@ -162,24 +162,75 @@ Portfolio-JishanahmedARShaikh/
 └── 📄 tsconfig.json            # TypeScript configuration
 ```
 
-## 📝 Available Scripts
+## 📝 **Available Scripts**
 
--`npm run dev` - Start development server
+| Command | Description | Usage |
+|---------|-------------|-------|
+| `dev` | Start development server with hot reload | `npm run dev` |
+| `build` | Create optimized production build | `npm run build` |
+| `build:dev` | Create development build | `npm run build:dev` |
+| `lint` | Run ESLint for code quality checks | `npm run lint` |
+| `preview` | Preview production build locally | `npm run preview` |
 
--`npm run build` - Build for production
+## 🎨 **Customization Guide**
 
--`npm run build:dev` - Build for development
+### **Personal Information**
+Update your details in the following components:
+- `src/components/Hero.tsx` - Name, title, and introduction
+- `src/components/MyStory.tsx` - Personal background and story
+- `src/components/Contact.tsx` - Contact information and social links
 
--`npm run lint` - Run ESLint
+### **Content Sections**
+- **Projects**: Add your projects in `src/components/Projects.tsx`
+- **Experience**: Update work history in `src/components/Experience.tsx`
+- **Skills**: Modify skills in `src/components/Skills.tsx` and `src/components/SkillsExpertise.tsx`
+- **Education**: Update educational background in `src/components/Education.tsx`
+- **Certifications**: Add certifications in `src/components/Certifications.tsx`
 
--`npm run preview` - Preview production build
+### **Styling & Theming**
+- **Colors**: Modify theme colors in `tailwind.config.ts`
+- **Fonts**: Update font families in `src/index.css`
+- **Components**: Customize UI components in `src/components/ui/`
+- **Animations**: Adjust Framer Motion animations in respective components
 
-## 🎨 Customization
+### **Assets**
+- Replace profile images in `public/my-images/`
+- Update favicon in `public/favicon.ico`
+- Add project screenshots and assets to `public/`
 
-1. Update personal information in the respective components
-2. Modify the theme colors in `tailwind.config.ts`
-3. Add your projects in the projects section
-4. Customize the skills and experience sections
+## 🔧 **Development Workflow**
+
+### **Code Quality**
+- **ESLint**: Configured with React and TypeScript rules
+- **TypeScript**: Strict type checking enabled
+- **Prettier**: Code formatting (configure in your editor)
+
+### **Component Structure**
+```typescript
+// Example component structure
+import { motion } from "framer-motion";
+import { ComponentProps } from "@/types";
+
+const MyComponent = ({ prop1, prop2 }: ComponentProps) => {
+  return (
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="container mx-auto px-4"
+    >
+      {/* Component content */}
+    </motion.section>
+  );
+};
+
+export default MyComponent;
+```
+
+### **Adding New Sections**
+1. Create component in `src/components/`
+2. Import and add to `src/pages/Index.tsx`
+3. Style with Tailwind CSS classes
+4. Add animations with Framer Motion
 
 ## 📄 License
 
