@@ -52,7 +52,13 @@ const CertificationCard = ({ cert, index }: { cert: any, index: number }) => (
     className="glass rounded-xl overflow-hidden transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5"
   >
     <div className="p-2 flex justify-center bg-gradient-to-r from-gray-900 to-black">
-      <img src={cert.image} alt={cert.title} className="h-28 w-28 object-contain" />
+      <img 
+        src={cert.image} 
+        alt={cert.title} 
+        className="h-28 w-28 object-contain" 
+        loading="lazy"
+        decoding="async"
+      />
     </div>
     <div className="p-5">
       <h3 className="text-lg font-semibold text-white mb-1">{cert.title}</h3>
