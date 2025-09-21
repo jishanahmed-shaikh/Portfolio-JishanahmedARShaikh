@@ -1,8 +1,17 @@
-# Portfolio - Jishanahmed AR Shaikh
+<div align="center">
+  <img src="./public/my-images/FormalProfile_Monochrome.png" alt="Jishanahmed AR Shaikh" width="150" height="150" style="border-radius: 50%; object-fit: cover;">
+  
+  # Jishanahmed AR Shaikh
+  ### Full-Stack Developer & Software Engineer
+  
+  [![Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen?style=for-the-badge&logo=vercel)](https://your-portfolio-url.com)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/jishanahmedshaikh)
+  [![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:shaikhjishan255@gmail.com)
+  
+  *A modern, responsive portfolio website showcasing professional experience, skills, and projects through an elegant and interactive interface.*
+</div>
 
-A modern, responsive portfolio website built with React, TypeScript, and Shadcn UI.
-
-This portfolio showcases my Professional Experience, Skills and Projects in a simple, elegant and interactive way.
+---
 
 ## 🚀 Features
 
