@@ -29,7 +29,7 @@ const ParticleBackground = () => {
     if (!ctx) return;
 
     // --- PARTICLE SETUP ---
-    // Stars with enhanced colors
+    // Stars with enhanced colors - reduced count for performance
     const starColors = [
       'rgba(255,255,255,0.7)', // white, reduced opacity
       'rgba(192,192,255,0.6)', // shiny silver-blue
@@ -38,7 +38,7 @@ const ParticleBackground = () => {
       'rgba(176,224,230,0.5)', // powder blue
       'rgba(100,180,255,0.7)', // deep blue
     ];
-    const stars = Array.from({ length: 120 }, () => ({
+    const stars = Array.from({ length: 80 }, () => ({
       x: Math.random() * width,
       y: heroHeight + Math.random() * (height - heroHeight),
       size: Math.random() * 3 + 1,
@@ -59,7 +59,7 @@ const ParticleBackground = () => {
       "rgba(173,216,230,0.10)",
       "rgba(135,206,250,0.10)",
     ];
-    const nebulae = Array.from({ length: 5 }, () => ({
+    const nebulae = Array.from({ length: 3 }, () => ({
       x: Math.random() * width,
       y: heroHeight + Math.random() * (height - heroHeight),
       size: Math.random() * 250 + 150,
@@ -80,7 +80,18 @@ const ParticleBackground = () => {
     }));
 
     // --- ANIMATION LOOP ---
-    function animate() {
+    let animationId: number;
+    let lastTime = 0;
+    const targetFPS = 60;
+    const frameInterval = 1000 / targetFPS;
+    
+    function animate(currentTime: number) {
+      if (currentTime - lastTime < frameInterval) {
+        animationId = requestAnimationFrame(animate);
+        return;
+      }
+      lastTime = currentTime;
+      
       ctx.clearRect(0, heroHeight, width, height - heroHeight);
       ctx.save();
       ctx.beginPath();
@@ -168,9 +179,16 @@ const ParticleBackground = () => {
       });
 
       ctx.restore();
-      requestAnimationFrame(animate);
+      animationId = requestAnimationFrame(animate);
     }
-    animate();
+    animationId = requestAnimationFrame(animate);
+    
+    // Cleanup function
+    return () => {
+      if (animationId) {
+        cancelAnimationFrame(animationId);
+      }
+    };
   }, [heroHeight]);
 
   return (
