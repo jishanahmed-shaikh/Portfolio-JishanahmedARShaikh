@@ -2,13 +2,13 @@
 import { motion } from "framer-motion";
 import { Award } from "lucide-react";
 
-// Sample certifications data
+// Professional certifications data with correct badge images
 const certifications = [
   {
     title: "Google Cloud Professional Architect",
     issuer: "Google Cloud",
     date: "2023",
-    image: "https://images.credly.com/size/680x680/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
+    image: "https://images.credly.com/size/680x680/images/5420d43c-a4bd-4152-81a5-3c0fff2b2c1a/image.png"
   },
   {
     title: "AWS Certified Solutions Architect",
@@ -20,25 +20,25 @@ const certifications = [
     title: "Microsoft Azure Administrator",
     issuer: "Microsoft",
     date: "2021",
-    image: "https://images.credly.com/size/680x680/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
+    image: "https://images.credly.com/size/680x680/images/336eebfc-0ac3-4553-9a67-b402f491f185/azure-administrator-associate-600x600.png"
   },
   {
     title: "Certified Kubernetes Administrator",
     issuer: "Cloud Native Computing Foundation",
     date: "2022",
-    image: "https://images.credly.com/size/680x680/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
+    image: "https://images.credly.com/size/680x680/images/8b8ed108-e77d-4396-ac59-2504583b9d54/cka_from_cncftrainingcertification.png"
   },
   {
     title: "Terraform Associate",
     issuer: "HashiCorp",
     date: "2022",
-    image: "https://images.credly.com/size/680x680/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
+    image: "https://images.credly.com/size/680x680/images/99289602-861e-4929-8277-773e63a2fa6f/image.png"
   },
   {
     title: "Docker Certified Associate",
     issuer: "Docker",
     date: "2021",
-    image: "https://images.credly.com/size/680x680/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
+    image: "https://images.credly.com/size/680x680/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png"
   }
 ];
 
