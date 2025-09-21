@@ -50,8 +50,8 @@ const Projects = () => {
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true, margin: "-50px" }}
               className="glass rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300"
             >
               {project.image && (
@@ -60,6 +60,8 @@ const Projects = () => {
                     src={project.image} 
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
               )}
