@@ -74,52 +74,92 @@
 
 </div>
 
-## 📦 Installation
+## 🚀 **Quick Start**
 
-1. Clone the repository:
+### **Prerequisites**
+- Node.js 18+ 
+- npm, yarn, or bun package manager
+- Git
 
+### **Installation**
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/jishanahmed-shaikh/Portfolio-JishanahmedARShaikh.git
+   cd Portfolio-JishanahmedARShaikh
+   ```
+
+2. **Install dependencies**
+   ```bash
+   # Using npm
+   npm install
+   
+   # Using yarn
+   yarn install
+   
+   # Using bun (recommended for faster installation)
+   bun install
+   ```
+
+3. **Start development server**
+   ```bash
+   # Using npm
+   npm run dev
+   
+   # Using yarn
+   yarn dev
+   
+   # Using bun
+   bun dev
+   ```
+
+4. **Open your browser**
+   
+   Navigate to [http://localhost:5173](http://localhost:5173) to view the portfolio.
+
+### **Build for Production**
 ```bash
+# Create optimized production build
+npm run build
 
-git clone https://github.com/yourusername/Portfolio-JishanahmedARShaikh.git
-
-cd Portfolio-JishanahmedARShaikh
-
+# Preview production build locally
+npm run preview
 ```
 
-2. Install dependencies:
-
-```bash
-
-npm install
-# or
-yarn install
-# or
-bun install
+## 🏗️ **Project Architecture**
 
 ```
-
-3. Start the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-bun dev
-```
-
-4. Open [http://localhost:8080](http://localhost:8080) in your browser.
-
-## 🏗️ Project Structure
-
-```
-src/
-├── components/    # Reusable UI components
-├── hooks/         # Custom React hooks
-├── lib/           # Utility functions and configurations
-├── pages/         # Page components
-├── App.tsx        # Main application component
-└── main.tsx       # Application entry point
+Portfolio-JishanahmedARShaikh/
+├── 📁 public/
+│   ├── 📁 my-images/           # Profile images and assets
+│   ├── favicon.ico             # Site favicon
+│   └── robots.txt              # SEO robots file
+├── 📁 src/
+│   ├── 📁 components/          # React components
+│   │   ├── 📁 ui/              # Shadcn UI components
+│   │   ├── Hero.tsx            # Landing section
+│   │   ├── MyStory.tsx         # About section
+│   │   ├── Skills.tsx          # Skills showcase
+│   │   ├── Experience.tsx      # Work experience
+│   │   ├── Projects.tsx        # Project portfolio
+│   │   ├── Education.tsx       # Educational background
+│   │   ├── Certifications.tsx  # Professional certifications
+│   │   ├── Community.tsx       # Community involvement
+│   │   ├── Contact.tsx         # Contact form
+│   │   ├── TicTacToe.tsx      # Interactive game
+│   │   └── Footer.tsx          # Site footer
+│   ├── 📁 hooks/               # Custom React hooks
+│   ├── 📁 lib/                 # Utility functions & configs
+│   ├── 📁 pages/               # Page components
+│   │   ├── Index.tsx           # Main portfolio page
+│   │   └── NotFound.tsx        # 404 error page
+│   ├── App.tsx                 # Root application component
+│   ├── main.tsx                # Application entry point
+│   └── index.css               # Global styles
+├── 📄 package.json             # Dependencies and scripts
+├── 📄 tailwind.config.ts       # Tailwind CSS configuration
+├── 📄 vite.config.ts           # Vite build configuration
+└── 📄 tsconfig.json            # TypeScript configuration
 ```
 
 ## 📝 Available Scripts
