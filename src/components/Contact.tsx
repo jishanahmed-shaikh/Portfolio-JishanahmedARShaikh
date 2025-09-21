@@ -12,20 +12,24 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // Simulate form submission with better UX
+      await new Promise(resolve => setTimeout(resolve, 800));
       console.log("Form submitted:", formData);
-      setIsSubmitting(false);
       setIsSubmitted(true);
       setFormData({ name: "", email: "", message: "" });
       
-      // Reset success message after 3 seconds
-      setTimeout(() => setIsSubmitted(false), 3000);
-    }, 1000);
+      // Reset success message after 4 seconds
+      setTimeout(() => setIsSubmitted(false), 4000);
+    } catch (error) {
+      console.error("Form submission error:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -111,9 +115,10 @@ const Contact = () => {
                 <label className="block text-sm font-medium mb-2 text-gray-200">Name</label>
                 <input
                   type="text"
-                  className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/10 focus:border-blue-400 transition-colors focus:outline-none"
+                  className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/10 focus:border-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400/20"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  placeholder="Your full name"
                   required
                 />
               </div>
@@ -121,18 +126,20 @@ const Contact = () => {
                 <label className="block text-sm font-medium mb-2 text-gray-200">Email</label>
                 <input
                   type="email"
-                  className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/10 focus:border-blue-400 transition-colors focus:outline-none"
+                  className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/10 focus:border-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400/20"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  placeholder="your.email@example.com"
                   required
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2 text-gray-200">Message</label>
                 <textarea
-                  className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/10 focus:border-blue-400 transition-colors focus:outline-none h-32 resize-none"
+                  className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/10 focus:border-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400/20 h-32 resize-none"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  placeholder="Tell me about your project or just say hello..."
                   required
                 />
               </div>
