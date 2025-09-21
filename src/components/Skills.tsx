@@ -38,7 +38,13 @@ const SkillItem = ({ skill }: { skill: { name: string; icon: string; color: stri
     }}
   >
     <div className="h-12 w-12 mb-3 flex items-center justify-center">
-      <img src={skill.icon} alt={skill.name} className="max-h-full max-w-full" />
+      <img 
+        src={skill.icon} 
+        alt={skill.name} 
+        className="max-h-full max-w-full" 
+        loading="lazy"
+        decoding="async"
+      />
     </div>
     <span className="text-sm font-medium">{skill.name}</span>
   </motion.div>
@@ -78,8 +84,8 @@ const Skills = () => {
               key={skill.name}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.05 }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.03 }}
+              viewport={{ once: true, margin: "-100px" }}
             >
               <SkillItem skill={skill} />
             </motion.div>
