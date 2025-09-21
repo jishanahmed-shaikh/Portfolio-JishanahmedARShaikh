@@ -46,6 +46,8 @@ const Hero = () => {
               alt="Logo"
               className="w-12 h-11 cursor-pointer rounded p-1 shadow"
               onClick={scrollToTop}
+              loading="eager"
+              decoding="async"
             />
           </motion.div>
 
@@ -129,6 +131,9 @@ const Hero = () => {
             src="/my-images/jishanahmed.png"
             alt="Profile"
             className="w-full h-full object-cover grayscale object-top"
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
           />
         </motion.div>
       </div>
