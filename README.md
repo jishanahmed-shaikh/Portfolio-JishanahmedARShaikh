@@ -13,30 +13,66 @@
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- Modern and responsive design
-- Dark/Light mode support
-- Smooth animations and transitions
-- Interactive UI components
-- Project showcase section
-- Skills and expertise display
-- Contact form
-- Blog section
-- Professional experience timeline
+<table>
+<tr>
+<td width="50%">
 
-## 🛠️ Technologies Used
+### 🎨 **Design & UX**
+- ✅ Modern, responsive design
+- ✅ Dark/Light mode toggle
+- ✅ Smooth animations & transitions
+- ✅ Interactive particle background
+- ✅ Mobile-first approach
+- ✅ Accessibility compliant
 
--**Frontend Framework:** React 18
--**Programming Language:** TypeScript
--**Styling:** Tailwind CSS
--**UI Components:** Shadcn UI
--**Animations:** Framer Motion
--**Routing:** React Router DOM
--**Form Handling:** React Hook Form
--**State Management:** React Query
--**Charts:** Recharts
--**Build Tool:** Vite
+</td>
+<td width="50%">
+
+### 🚀 **Functionality**
+- ✅ Dynamic project showcase
+- ✅ Professional experience timeline
+- ✅ Skills & expertise visualization
+- ✅ Interactive contact form
+- ✅ Certification gallery
+- ✅ Community involvement section
+
+</td>
+</tr>
+</table>
+
+### 🎮 **Interactive Elements**
+- **Tic-Tac-Toe Game**: Built-in mini-game for engagement
+- **Particle System**: Dynamic background animations
+- **Smooth Scrolling**: Enhanced navigation experience
+- **Form Validation**: Real-time input validation with React Hook Form
+
+## 🛠️ **Technology Stack**
+
+<div align="center">
+
+### **Frontend**
+![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.5.3-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5.4.1-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+
+### **Styling & UI**
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.11-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Shadcn/UI](https://img.shields.io/badge/Shadcn/UI-Latest-000000?style=for-the-badge&logo=shadcnui&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.9.2-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+
+### **State & Data Management**
+![React Query](https://img.shields.io/badge/React_Query-5.56.2-FF4154?style=for-the-badge&logo=react-query&logoColor=white)
+![React Hook Form](https://img.shields.io/badge/React_Hook_Form-7.53.0-EC5990?style=for-the-badge&logo=reacthookform&logoColor=white)
+![Zod](https://img.shields.io/badge/Zod-3.23.8-3E67B1?style=for-the-badge&logo=zod&logoColor=white)
+
+### **Additional Libraries**
+![React Router](https://img.shields.io/badge/React_Router-6.26.2-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Recharts](https://img.shields.io/badge/Recharts-2.12.7-8884D8?style=for-the-badge&logo=recharts&logoColor=white)
+![Lucide React](https://img.shields.io/badge/Lucide_React-0.462.0-F56565?style=for-the-badge&logo=lucide&logoColor=white)
+
+</div>
 
 ## 📦 Installation
 
