@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./public/my-images/FormalProfile_Monochrome.png" alt="Jishanahmed AR Shaikh" width="150" height="150" style="border-radius: 50%; object-fit: cover;">
+  <img src="./public/my-images/FormalProfile_Monochrome_WhiteCircularBorder.png" alt="Jishanahmed AR Shaikh" width="150" height="150" style="object-fit: cover;">
   
   # Jishanahmed AR Shaikh
   ### Full-Stack Developer & Software Engineer
