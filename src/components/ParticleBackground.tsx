@@ -29,7 +29,7 @@ const ParticleBackground = () => {
     if (!ctx) return;
 
     // --- PARTICLE SETUP ---
-    // Stars with enhanced colors - reduced count for performance
+    // Stars with enhanced colors - restored full particle count
     const starColors = [
       'rgba(255,255,255,0.7)', // white, reduced opacity
       'rgba(192,192,255,0.6)', // shiny silver-blue
@@ -38,7 +38,7 @@ const ParticleBackground = () => {
       'rgba(176,224,230,0.5)', // powder blue
       'rgba(100,180,255,0.7)', // deep blue
     ];
-    const stars = Array.from({ length: 80 }, () => ({
+    const stars = Array.from({ length: 150 }, () => ({
       x: Math.random() * width,
       y: heroHeight + Math.random() * (height - heroHeight),
       size: Math.random() * 3 + 1,
@@ -59,7 +59,7 @@ const ParticleBackground = () => {
       "rgba(173,216,230,0.10)",
       "rgba(135,206,250,0.10)",
     ];
-    const nebulae = Array.from({ length: 3 }, () => ({
+    const nebulae = Array.from({ length: 8 }, () => ({
       x: Math.random() * width,
       y: heroHeight + Math.random() * (height - heroHeight),
       size: Math.random() * 250 + 150,
@@ -69,8 +69,8 @@ const ParticleBackground = () => {
       speedY: (Math.random() - 0.5) * 0.01, // reduced speed
     }));
 
-    // Multiple Astronauts (smaller, fewer, more transparent)
-    const astronauts = Array.from({ length: 1 }, () => ({
+    // Multiple Astronauts (restored count for better visual effect)
+    const astronauts = Array.from({ length: 3 }, () => ({
       x: Math.random() * width,
       y: heroHeight + (Math.random() * (height - heroHeight - 100) + 50),
       size: Math.random() * 6 + 8, // much smaller
@@ -97,6 +97,32 @@ const ParticleBackground = () => {
       ctx.beginPath();
       ctx.rect(0, heroHeight, width, height - heroHeight);
       ctx.clip();
+
+      // Draw nebulae first (background layer)
+      nebulae.forEach((nebula) => {
+        nebula.x += nebula.speedX;
+        nebula.y += nebula.speedY;
+        if (nebula.x < -nebula.size) nebula.x = width + nebula.size;
+        if (nebula.x > width + nebula.size) nebula.x = -nebula.size;
+        if (nebula.y < heroHeight - nebula.size) nebula.y = height + nebula.size;
+        if (nebula.y > height + nebula.size) nebula.y = heroHeight - nebula.size;
+
+        // Create gradient for nebula
+        const gradient = ctx.createRadialGradient(
+          nebula.x, nebula.y, 0,
+          nebula.x, nebula.y, nebula.size
+        );
+        gradient.addColorStop(0, nebula.color);
+        gradient.addColorStop(1, 'rgba(0,0,0,0)');
+
+        ctx.save();
+        ctx.globalAlpha = nebula.opacity;
+        ctx.beginPath();
+        ctx.arc(nebula.x, nebula.y, nebula.size, 0, Math.PI * 2);
+        ctx.fillStyle = gradient;
+        ctx.fill();
+        ctx.restore();
+      });
 
       // Draw stars with enhanced sparkle and star shape
       stars.forEach((star) => {
