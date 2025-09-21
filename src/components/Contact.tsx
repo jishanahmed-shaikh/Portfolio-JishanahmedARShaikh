@@ -60,11 +60,7 @@ const Contact = () => {
                 <Mail className="w-6 h-15 mr-3 text-blue-400" />
                 <h3 className="text-xl font-semibold">Email</h3>
               </div>
-              <a href="mailto:contact@jishanahmedshaikh@lixtanetwork.com" className="text-blue-300 hover:text-blue-400 transition-colors">
-                jishanahmedshaikh@lixtanetwork.com
-              </a>
-              <br></br>
-              <a href="mailto:contact@shaikhjishan255@gmail.com" className="text-blue-300 hover:text-blue-400 transition-colors">
+              <a href="mailto:shaikhjishan255@gmail.com" className="text-blue-300 hover:text-blue-400 transition-colors">
                 shaikhjishan255@gmail.com
               </a>
             </motion.div>
