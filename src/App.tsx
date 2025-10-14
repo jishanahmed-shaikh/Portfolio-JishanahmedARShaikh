@@ -7,7 +7,7 @@ import { lazy, Suspense } from "react";
 
 // Lazy load components for better performance
 const Index = lazy(() => import("./pages/Index"));
-const SkillsPage = lazy(() => import("src/pages/SkillsPage"));
+const SkillsPage = lazy(() => import("./pages/SkillsPage"));
 const ExperiencePage = lazy(() => import("./pages/ExperiencePage"));
 const RecognitionsPage = lazy(() => import("./pages/RecognitionsPage"));
 const CertificationsPage = lazy(() => import("./pages/CertificationsPage"));
