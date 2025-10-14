@@ -211,12 +211,14 @@ const Hero = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden text-white p-2"
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="lg:hidden text-white p-2 glass rounded-lg hover:bg-white/10 transition-all duration-300"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          </motion.button>
         </div>
 
         {/* Mobile Menu */}
@@ -225,7 +227,8 @@ const Hero = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="lg:hidden bg-black/90 backdrop-blur-md border-t border-white/10"
+            transition={{ duration: 0.3 }}
+            className="lg:hidden bg-black/95 backdrop-blur-md border-t border-white/10 shadow-2xl"
           >
             <div className="container mx-auto px-4 py-6">
               <div className="flex flex-col space-y-4">
