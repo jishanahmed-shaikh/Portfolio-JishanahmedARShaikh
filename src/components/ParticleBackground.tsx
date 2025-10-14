@@ -40,7 +40,7 @@ const ParticleBackground = () => {
     ];
     const stars = Array.from({ length: 150 }, () => ({
       x: Math.random() * width,
-      y: heroHeight + Math.random() * (height - heroHeight),
+      y: Math.random() * height,
       size: Math.random() * 3 + 1,
       speedX: (Math.random() - 0.5) * 0.03, // reduced speed
       speedY: (Math.random() - 0.5) * 0.03, // reduced speed
@@ -61,7 +61,7 @@ const ParticleBackground = () => {
     ];
     const nebulae = Array.from({ length: 8 }, () => ({
       x: Math.random() * width,
-      y: heroHeight + Math.random() * (height - heroHeight),
+      y: Math.random() * height,
       size: Math.random() * 250 + 150,
       color: nebulaColors[Math.floor(Math.random() * nebulaColors.length)],
       opacity: Math.random() * 0.15 + 0.08,
@@ -72,7 +72,7 @@ const ParticleBackground = () => {
     // Multiple Astronauts (restored count for better visual effect)
     const astronauts = Array.from({ length: 3 }, () => ({
       x: Math.random() * width,
-      y: heroHeight + (Math.random() * (height - heroHeight - 100) + 50),
+      y: Math.random() * height,
       size: Math.random() * 6 + 8, // much smaller
       speedX: (Math.random() * 0.08) + 0.03, // slow
       trail: [] as Array<{ x: number, y: number, opacity: number }>,
@@ -92,11 +92,8 @@ const ParticleBackground = () => {
       }
       lastTime = currentTime;
       
-      ctx.clearRect(0, heroHeight, width, height - heroHeight);
+      ctx.clearRect(0, 0, width, height);
       ctx.save();
-      ctx.beginPath();
-      ctx.rect(0, heroHeight, width, height - heroHeight);
-      ctx.clip();
 
       // Draw nebulae first (background layer)
       nebulae.forEach((nebula) => {
@@ -104,8 +101,8 @@ const ParticleBackground = () => {
         nebula.y += nebula.speedY;
         if (nebula.x < -nebula.size) nebula.x = width + nebula.size;
         if (nebula.x > width + nebula.size) nebula.x = -nebula.size;
-        if (nebula.y < heroHeight - nebula.size) nebula.y = height + nebula.size;
-        if (nebula.y > height + nebula.size) nebula.y = heroHeight - nebula.size;
+        if (nebula.y < -nebula.size) nebula.y = height + nebula.size;
+        if (nebula.y > height + nebula.size) nebula.y = -nebula.size;
 
         // Create gradient for nebula
         const gradient = ctx.createRadialGradient(
@@ -130,8 +127,8 @@ const ParticleBackground = () => {
         star.y += star.speedY;
         if (star.x < 0) star.x = width;
         if (star.x > width) star.x = 0;
-        if (star.y < heroHeight) star.y = height;
-        if (star.y > height) star.y = heroHeight;
+        if (star.y < 0) star.y = height;
+        if (star.y > height) star.y = 0;
 
         // Twinkle
         star.opacity += star.pulse * star.pulseDir;
@@ -171,7 +168,7 @@ const ParticleBackground = () => {
         astronaut.x += astronaut.speedX;
         if (astronaut.x > width + 50) {
           astronaut.x = -50;
-          astronaut.y = heroHeight + (Math.random() * (height - heroHeight - 100) + 50);
+          astronaut.y = Math.random() * height;
           astronaut.trail = [];
         }
 
@@ -220,8 +217,11 @@ const ParticleBackground = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-screen h-screen z-0 pointer-events-none"
-      style={{ background: 'black' }}
+      className="fixed top-0 left-0 w-screen h-screen pointer-events-none"
+      style={{ 
+        background: 'transparent',
+        zIndex: 1
+      }}
     />
   );
 };

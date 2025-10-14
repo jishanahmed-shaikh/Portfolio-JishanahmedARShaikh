@@ -52,7 +52,7 @@ const SkillItem = ({ skill }: { skill: { name: string; icon: string; color: stri
 
 const Skills = () => {
   return (
-    <section id="tech-stack" className="py-20 relative">
+    <section id="skills" className="py-20 relative">
       <div className="container mx-auto px-4">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
@@ -61,7 +61,7 @@ const Skills = () => {
           viewport={{ once: true }}
           className="text-4xl font-bold mb-4 gradient-text text-center"
         >
-          Tech Stack
+          Skills
         </motion.h2>
         <motion.p 
           initial={{ opacity: 0, y: 20 }}

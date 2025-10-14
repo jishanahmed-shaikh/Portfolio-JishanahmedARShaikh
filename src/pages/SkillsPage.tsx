@@ -28,17 +28,17 @@ const SkillItem = ({ skill }: { skill: { name: string; icon: string; color: stri
   <motion.div
     whileHover={{ scale: 1.05 }}
     className="flex flex-col items-center glass p-4 rounded-lg shadow-lg transition-all duration-300"
-    style={{ 
+    style={{
       background: `linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)`,
-      borderColor: skill.color, 
-      boxShadow: `0 4px 12px rgba(0,0,0,0.15), 0 0 5px ${skill.color}40` 
+      borderColor: skill.color,
+      boxShadow: `0 4px 12px rgba(0,0,0,0.15), 0 0 5px ${skill.color}40`
     }}
   >
     <div className="h-12 w-12 mb-3 flex items-center justify-center">
-      <img 
-        src={skill.icon} 
-        alt={skill.name} 
-        className="max-h-full max-w-full" 
+      <img
+        src={skill.icon}
+        alt={skill.name}
+        className="max-h-full max-w-full"
         loading="lazy"
         decoding="async"
       />
@@ -53,15 +53,15 @@ const SkillsPage = () => {
       <ParticleBackground />
       <div className="relative z-10">
         <div className="container mx-auto px-4 py-20">
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8 transition-colors"
           >
             <ArrowLeft className="w-5 h-5 mr-2" />
             Back to Home
           </Link>
-          
-          <motion.h1 
+
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -69,18 +69,18 @@ const SkillsPage = () => {
           >
             Skills & Technologies
           </motion.h1>
-          
-          <motion.p 
+
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl text-gray-400 mb-12 max-w-3xl"
           >
-            A comprehensive overview of my technical expertise across multiple domains including programming languages, 
+            A comprehensive overview of my technical expertise across multiple domains including programming languages,
             frameworks, cloud platforms, and specialized tools that I use to build innovative solutions.
           </motion.p>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}

@@ -2,16 +2,12 @@ import { motion } from "framer-motion";
 import ParticleBackground from "../components/ParticleBackground";
 import Hero from "../components/Hero";
 import MyStory from "../components/MyStory";
-import Skills from "../components/Skills";
-import Experience from "../components/Experience";
-import Education from "../components/Education";
-import Certifications from "../components/Certifications";
-import Community from "../components/Community";
+import OverviewSection from "../components/OverviewSection";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import TicTacToe from "../components/TicTacToe";
 import Footer from "../components/Footer";
-import SkillsExpertise from "../components/SkillsExpertise";
+
 
 const Index = () => {
   return (
@@ -25,13 +21,8 @@ const Index = () => {
           transition={{ duration: 0.5 }}
         >
           <MyStory />
-          <SkillsExpertise />
-          <Experience />
-          <Skills />
+          <OverviewSection />
           <Projects />
-          <Education />
-          <Certifications />
-          <Community />
           <Contact />
           <TicTacToe />
           <Footer />

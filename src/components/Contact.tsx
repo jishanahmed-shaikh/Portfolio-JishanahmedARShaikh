@@ -15,14 +15,14 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     try {
       // Simulate form submission with better UX
       await new Promise(resolve => setTimeout(resolve, 800));
       console.log("Form submitted:", formData);
       setIsSubmitted(true);
       setFormData({ name: "", email: "", message: "" });
-      
+
       // Reset success message after 4 seconds
       setTimeout(() => setIsSubmitted(false), 4000);
     } catch (error) {
@@ -37,7 +37,7 @@ const Contact = () => {
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-800/10 to-purple-800/10 z-0" />
       </div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -49,7 +49,7 @@ const Contact = () => {
           <MessageSquare className="w-8 h-8 mr-3 text-blue-400" />
           <h2 className="text-4xl font-bold gradient-text">Get In Touch</h2>
         </motion.div>
-        
+
         <div className="grid md:grid-cols-3 gap-10">
           {/* Contact Information */}
           <div className="md:col-span-1 space-y-6">
@@ -68,7 +68,7 @@ const Contact = () => {
                 shaikhjishan255@gmail.com
               </a>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -101,7 +101,7 @@ const Contact = () => {
               </a>
             </motion.div>
           </div>
-          
+
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -147,11 +147,10 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full py-3 rounded-lg ${
-                    isSubmitting 
+                  className={`w-full py-3 rounded-lg ${isSubmitting
                     ? "bg-gray-500"
-                    : "bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900" 
-                  } transition-all duration-300 font-medium relative overflow-hidden group`}
+                    : "bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900"
+                    } transition-all duration-300 font-medium relative overflow-hidden group`}
                 >
                   <span className="relative z-10">
                     {isSubmitting ? "Sending..." : "Send Message"}
