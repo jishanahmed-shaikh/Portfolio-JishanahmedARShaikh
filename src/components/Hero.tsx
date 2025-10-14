@@ -44,11 +44,18 @@ const Hero = () => {
           >
             <img
               src="/my-images/mainlogo.png"
-              alt="Logo"
+              alt="Jishanahmed AR Shaikh - Portfolio Logo"
               className="w-12 h-11 cursor-pointer rounded p-1 shadow"
               onClick={scrollToTop}
               loading="eager"
               decoding="async"
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  scrollToTop();
+                }
+              }}
             />
           </motion.div>
 
@@ -216,6 +223,8 @@ const Hero = () => {
             whileTap={{ scale: 0.95 }}
             className="lg:hidden text-white p-2 glass rounded-lg hover:bg-white/10 transition-all duration-300"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={isMobileMenuOpen}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </motion.button>
@@ -229,6 +238,8 @@ const Hero = () => {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
             className="lg:hidden bg-black/95 backdrop-blur-md border-t border-white/10 shadow-2xl"
+            role="navigation"
+            aria-label="Mobile navigation menu"
           >
             <div className="container mx-auto px-4 py-6">
               <div className="flex flex-col space-y-4">
