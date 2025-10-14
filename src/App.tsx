@@ -7,6 +7,17 @@ import { lazy, Suspense } from "react";
 
 // Lazy load components for better performance
 const Index = lazy(() => import("./pages/Index"));
+const SkillsPage = lazy(() => import("./pages/SkillsPage"));
+const ExperiencePage = lazy(() => import("./pages/ExperiencePage"));
+const RecognitionsPage = lazy(() => import("./pages/RecognitionsPage"));
+const CertificationsPage = lazy(() => import("./pages/CertificationsPage"));
+const CommunityPage = lazy(() => import("./pages/CommunityPage"));
+const Community = lazy(() => import("./pages/Community"));
+const SpeakerSessions = lazy(() => import("./pages/SpeakerSessions"));
+const EventsConferences = lazy(() => import("./pages/EventsConferences"));
+const AIFilms = lazy(() => import("./pages/AIFilms"));
+const ARProjects = lazy(() => import("./pages/ARProjects"));
+const Gallery = lazy(() => import("./pages/Gallery"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Optimize QueryClient configuration
@@ -34,6 +45,18 @@ const App = () => (
         }>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/skills" element={<SkillsPage />} />
+            <Route path="/experience" element={<ExperiencePage />} />
+            <Route path="/recognitions" element={<RecognitionsPage />} />
+            <Route path="/certifications" element={<CertificationsPage />} />
+            <Route path="/community" element={<Community />} />
+            <Route path="/speaker-sessions" element={<SpeakerSessions />} />
+            <Route path="/events-conferences" element={<EventsConferences />} />
+            <Route path="/ai-films" element={<AIFilms />} />
+            <Route path="/ar-projects" element={<ARProjects />} />
+            <Route path="/gallery" element={<Gallery />} />
+            {/* Legacy community page route - keeping for backward compatibility */}
+            <Route path="/community-page" element={<CommunityPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
