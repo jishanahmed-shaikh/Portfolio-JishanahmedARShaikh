@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Youtube, Instagram, Twitter, ArrowUp } from "lucide-react";
+import { Github, Linkedin, Youtube, Instagram, Twitter, ArrowUp, ChevronDown, Menu, X } from "lucide-react";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
 import { useEffect, useState } from "react";
-import ParticleBackground from "./ParticleBackground";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,62 +52,310 @@ const Hero = () => {
             />
           </motion.div>
 
-          {/* Navigation */}
-          <NavigationMenu>
-            <NavigationMenuList className="flex gap-6">
-              <NavigationMenuItem>
-                <NavigationMenuLink 
-                  href="#about" 
-                  className="text-white hover:text-blue-300 transition-colors duration-300"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
-                  }}
-                >About</NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink 
-                  href="#experience" 
-                  className="text-white hover:text-blue-300 transition-colors duration-300"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" });
-                  }}
-                >Experience</NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink 
-                  href="#education" 
-                  className="text-white hover:text-blue-300 transition-colors duration-300"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.getElementById("education")?.scrollIntoView({ behavior: "smooth" });
-                  }}
-                >Education</NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink 
-                  href="#community" 
-                  className="text-white hover:text-blue-300 transition-colors duration-300"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.getElementById("community")?.scrollIntoView({ behavior: "smooth" });
-                  }}
-                >Community</NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink 
-                  href="#contact" 
-                  className="text-white hover:text-blue-300 transition-colors duration-300"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-                  }}
-                >Contact</NavigationMenuLink>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
+          {/* Desktop Navigation */}
+          <div className="hidden lg:block">
+            <NavigationMenu>
+              <NavigationMenuList className="flex gap-6">
+                {/* Home */}
+                <NavigationMenuItem>
+                  <NavigationMenuLink 
+                    href="#home" 
+                    className="text-white hover:text-blue-300 transition-colors duration-300"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToTop();
+                    }}
+                  >
+                    Home
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+
+                {/* Professional Overview Dropdown */}
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-white hover:text-blue-300 transition-colors duration-300 bg-transparent">
+                    Overview
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className="glass backdrop-blur-md border border-white/10">
+                    <div className="grid gap-3 p-4 w-[400px]">
+                      <div className="grid grid-cols-2 gap-2">
+                        <Link 
+                          to="/skills" 
+                          className="block p-3 rounded-lg hover:bg-white/10 transition-colors"
+                        >
+                          <div className="text-sm font-medium text-white">Skills & Technologies</div>
+                          <div className="text-xs text-gray-400">Technical expertise</div>
+                        </Link>
+                        <Link 
+                          to="/experience" 
+                          className="block p-3 rounded-lg hover:bg-white/10 transition-colors"
+                        >
+                          <div className="text-sm font-medium text-white">Experience</div>
+                          <div className="text-xs text-gray-400">Professional journey</div>
+                        </Link>
+                        <Link 
+                          to="/certifications" 
+                          className="block p-3 rounded-lg hover:bg-white/10 transition-colors"
+                        >
+                          <div className="text-sm font-medium text-white">Certifications</div>
+                          <div className="text-xs text-gray-400">Professional credentials</div>
+                        </Link>
+                        <Link 
+                          to="/recognitions" 
+                          className="block p-3 rounded-lg hover:bg-white/10 transition-colors"
+                        >
+                          <div className="text-sm font-medium text-white">Awards</div>
+                          <div className="text-xs text-gray-400">Recognition & achievements</div>
+                        </Link>
+                      </div>
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                {/* Community Contributions Dropdown */}
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-white hover:text-blue-300 transition-colors duration-300 bg-transparent">
+                    Community
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className="glass backdrop-blur-md border border-white/10">
+                    <div className="grid gap-3 p-4 w-[450px]">
+                      <div className="grid grid-cols-2 gap-2">
+                        <Link 
+                          to="/community" 
+                          className="block p-3 rounded-lg hover:bg-white/10 transition-colors"
+                        >
+                          <div className="text-sm font-medium text-white">Community Building</div>
+                          <div className="text-xs text-gray-400">1500+ members impacted</div>
+                        </Link>
+                        <Link 
+                          to="/speaker-sessions" 
+                          className="block p-3 rounded-lg hover:bg-white/10 transition-colors"
+                        >
+                          <div className="text-sm font-medium text-white">Speaker Sessions</div>
+                          <div className="text-xs text-gray-400">25+ sessions delivered</div>
+                        </Link>
+                        <Link 
+                          to="/events-conferences" 
+                          className="block p-3 rounded-lg hover:bg-white/10 transition-colors"
+                        >
+                          <div className="text-sm font-medium text-white">Events & Conferences</div>
+                          <div className="text-xs text-gray-400">15+ events organized</div>
+                        </Link>
+                        <Link 
+                          to="/ar-projects" 
+                          className="block p-3 rounded-lg hover:bg-white/10 transition-colors"
+                        >
+                          <div className="text-sm font-medium text-white">AR Projects</div>
+                          <div className="text-xs text-gray-400">1.5M+ users reached</div>
+                        </Link>
+                      </div>
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                {/* Creative Works Dropdown */}
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-white hover:text-blue-300 transition-colors duration-300 bg-transparent">
+                    Creative
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className="glass backdrop-blur-md border border-white/10">
+                    <div className="grid gap-3 p-4 w-[350px]">
+                      <div className="grid grid-cols-1 gap-2">
+                        <Link 
+                          to="/ai-films" 
+                          className="block p-3 rounded-lg hover:bg-white/10 transition-colors"
+                        >
+                          <div className="text-sm font-medium text-white">AI Films & Creations</div>
+                          <div className="text-xs text-gray-400">12+ AI films created</div>
+                        </Link>
+                        <Link 
+                          to="/gallery" 
+                          className="block p-3 rounded-lg hover:bg-white/10 transition-colors"
+                        >
+                          <div className="text-sm font-medium text-white">Personal Gallery</div>
+                          <div className="text-xs text-gray-400">Photos, videos & creative content</div>
+                        </Link>
+                      </div>
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                {/* Projects */}
+                <NavigationMenuItem>
+                  <NavigationMenuLink 
+                    href="#projects" 
+                    className="text-white hover:text-blue-300 transition-colors duration-300"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+                    }}
+                  >
+                    Projects
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+
+                {/* Contact */}
+                <NavigationMenuItem>
+                  <NavigationMenuLink 
+                    href="#contact" 
+                    className="text-white hover:text-blue-300 transition-colors duration-300"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                    }}
+                  >
+                    Contact
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="lg:hidden text-white p-2"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="lg:hidden bg-black/90 backdrop-blur-md border-t border-white/10"
+          >
+            <div className="container mx-auto px-4 py-6">
+              <div className="flex flex-col space-y-4">
+                {/* Home */}
+                <button
+                  onClick={() => {
+                    scrollToTop();
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="text-left text-white hover:text-blue-300 transition-colors py-2"
+                >
+                  Home
+                </button>
+
+                {/* Overview Section */}
+                <div className="border-l-2 border-blue-400 pl-4">
+                  <div className="text-blue-300 font-semibold mb-2">Professional Overview</div>
+                  <div className="grid grid-cols-2 gap-2">
+                    <Link 
+                      to="/skills" 
+                      className="text-sm text-gray-300 hover:text-white transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Skills & Technologies
+                    </Link>
+                    <Link 
+                      to="/experience" 
+                      className="text-sm text-gray-300 hover:text-white transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Experience
+                    </Link>
+                    <Link 
+                      to="/certifications" 
+                      className="text-sm text-gray-300 hover:text-white transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Certifications
+                    </Link>
+                    <Link 
+                      to="/recognitions" 
+                      className="text-sm text-gray-300 hover:text-white transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Awards
+                    </Link>
+                  </div>
+                </div>
+
+                {/* Community Section */}
+                <div className="border-l-2 border-green-400 pl-4">
+                  <div className="text-green-300 font-semibold mb-2">Community Contributions</div>
+                  <div className="grid grid-cols-1 gap-2">
+                    <Link 
+                      to="/community" 
+                      className="text-sm text-gray-300 hover:text-white transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Community Building
+                    </Link>
+                    <Link 
+                      to="/speaker-sessions" 
+                      className="text-sm text-gray-300 hover:text-white transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Speaker Sessions
+                    </Link>
+                    <Link 
+                      to="/events-conferences" 
+                      className="text-sm text-gray-300 hover:text-white transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Events & Conferences
+                    </Link>
+                    <Link 
+                      to="/ar-projects" 
+                      className="text-sm text-gray-300 hover:text-white transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      AR Projects
+                    </Link>
+                  </div>
+                </div>
+
+                {/* Creative Section */}
+                <div className="border-l-2 border-purple-400 pl-4">
+                  <div className="text-purple-300 font-semibold mb-2">Creative Works</div>
+                  <div className="grid grid-cols-1 gap-2">
+                    <Link 
+                      to="/ai-films" 
+                      className="text-sm text-gray-300 hover:text-white transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      AI Films & Creations
+                    </Link>
+                    <Link 
+                      to="/gallery" 
+                      className="text-sm text-gray-300 hover:text-white transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Personal Gallery
+                    </Link>
+                  </div>
+                </div>
+
+                {/* Projects */}
+                <button
+                  onClick={() => {
+                    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="text-left text-white hover:text-blue-300 transition-colors py-2"
+                >
+                  Projects
+                </button>
+
+                {/* Contact */}
+                <button
+                  onClick={() => {
+                    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="text-left text-white hover:text-blue-300 transition-colors py-2"
+                >
+                  Contact
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        )}
       </nav>
 
       <div className="absolute inset-0">
