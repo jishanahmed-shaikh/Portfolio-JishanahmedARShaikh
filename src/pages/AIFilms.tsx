@@ -384,10 +384,10 @@ const AIFilms = () => {
             <div className="grid md:grid-cols-4 gap-8">
               <div>
                 <div className="text-4xl font-bold text-blue-400 mb-2">3</div>
-                <div className="text-gray-400">Major AI Films</div>
+                <div className="text-gray-400">Major AI Shorts & Films</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-green-400 mb-2">100K+</div>
+                <div className="text-4xl font-bold text-green-400 mb-2">50K+</div>
                 <div className="text-gray-400">Expected Views</div>
               </div>
               <div>
