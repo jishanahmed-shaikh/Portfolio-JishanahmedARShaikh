@@ -405,10 +405,10 @@ const Hero = () => {
             AI & Cloud Engineer | Full Stack Developer | AI Film Maker
           </p>
           <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            Experienced Technology Visionary with expertise in AI Engineering and Cloud Computing with proven
-            experience in Business Leadership, Operations and Community Development.
-            Passionate about driving innovation through technological and business skills
-            to foster individual and collective growth.
+          Experienced Developer / Engineer with expertise in AI, Cloud, and Data Engineering, 
+          bringing proven experience in Business Operations, Leadership, and Community Development. 
+          Passionate about blending technology and creativity through AR experiences and AI-driven films, 
+          helping small-scale brands grow through innovation, automation, and storytelling.
           </p>
           <div className="flex gap-6 justify-center mb-8">
             {socialLinks.map((link) => (

@@ -5,49 +5,84 @@ import ParticleBackground from "../components/ParticleBackground";
 
 const skillCategories = {
   "Programming Languages": [
-    { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", color: "#3776AB" },
-    { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", color: "#F7DF1E" },
-    { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", color: "#3178C6" },
-    { name: "ReactJS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", color: "#61DAFB" },
-    { name: "SQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", color: "#4479A1" },
-    { name: "R", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg", color: "#276DC3" },
-    { name: "C++", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg", color: "#00599C" },
-    { name: "C", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg", color: "#A8B9CC" },
-    { name: "C#", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg", color: "#239120" },
-    { name: "Go", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg", color: "#00ADD8" },
-    { name: "Rust", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg", color: "#CE422B" },
-    { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", color: "#ED8B00" }
-  ],
-  
-  "Cloud & DevOps": [
-    { name: "Google Cloud", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg", color: "#4285F4" },
-    { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg", color: "#FF9900" },
-    { name: "Azure", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg", color: "#0078D4" },
-    { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", color: "#2496ED" },
-    { name: "Kubernetes", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg", color: "#326CE5" },
-    { name: "Terraform", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg", color: "#7B42BC" },
-    { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", color: "#F05032" },
-    { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", color: "#181717" }
+    { name: "Python", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg", color: "#3776AB" },
+    { name: "JavaScript", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg", color: "#F7DF1E" },
+    { name: "TypeScript", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg", color: "#3178C6" },
+    { name: "C++", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg", color: "#00599C" },
+    { name: "Java", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg", color: "#ED8B00" },
+    { name: "Rust", icon: "https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/rust/rust-plain.svg", color: "#CE422B" },
+    { name: "Go", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg", color: "#00ADD8" },
+    { name: "C", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg", color: "#A8B9CC" },
+    { name: "C#", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg", color: "#239120" },
+    { name: "R", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/r/r-original.svg", color: "#276DC3" }
   ],
 
-  "Frameworks & Libraries": [
-    { name: "TailwindCSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg", color: "#06B6D4" },
-    { name: "FastAPI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg", color: "#009688" },
-    { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", color: "#007ACC" },
-    { name: "Unity", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg", color: "#000000" },
-    { name: "Unreal Engine", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg", color: "#0E1128" },
-    { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", color: "#F24E1E" }
+  "Frontend Development": [
+    { name: "React", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg", color: "#61DAFB" },
+    { name: "HTML5", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg", color: "#E34F26" },
+    { name: "CSS3", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg", color: "#1572B6" },
+    { name: "Next.js", icon: "https://cdn.worldvectorlogo.com/logos/nextjs-2.svg", color: "#000000" },
+    { name: "Vue.js", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg", color: "#4FC08D" },
+    { name: "TailwindCSS", icon: "https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/tailwindcss/tailwindcss-plain.svg", color: "#06B6D4" },
+    { name: "Sass", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg", color: "#CC6699" },
+    { name: "Redux", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg", color: "#764ABC" },
+    { name: "Vite", icon: "https://vitejs.dev/logo-with-shadow.png", color: "#646CFF" },
+    { name: "shadcn/ui", icon: "https://avatars.githubusercontent.com/u/139895814?s=200&v=4", color: "#000000" },
+    { name: "Bootstrap", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain.svg", color: "#7952B3" }
+  ],
+
+  "Backend Development": [
+    { name: "Node.js", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg", color: "#339933" },
+    { name: "Express.js", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg", color: "#000000" },
+    { name: "NestJS", icon: "https://www.vectorlogo.zone/logos/nestjs/nestjs-icon.svg", color: "#E0234E" },
+    { name: "Django", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-plain.svg", color: "#092E20" },
+    { name: "Flask", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg", color: "#000000" },
+    { name: "FastAPI", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg", color: "#009688" },
+    { name: "Spring", icon: "https://www.vectorlogo.zone/logos/springio/springio-icon.svg", color: "#6DB33F" },
+    { name: ".NET", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original.svg", color: "#512BD4" }
+  ],
+
+  "Database": [
+    { name: "MongoDB", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg", color: "#47A248" },
+    { name: "MySQL", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg", color: "#4479A1" },
+    { name: "PostgreSQL", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg", color: "#336791" },
+    { name: "Redis", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg", color: "#DC382D" },
+    { name: "Firebase", icon: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg", color: "#FFCA28" },
+    { name: "SQLite", icon: "https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/sqlite/sqlite-original.svg", color: "#003B57" },
+    { name: "Oracle", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg", color: "#F80000" }
+  ],
+  
+  "DevOps & Cloud": [
+    { name: "Docker", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg", color: "#2496ED" },
+    { name: "Kubernetes", icon: "https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg", color: "#326CE5" },
+    { name: "AWS", icon: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg", color: "#FF9900" },
+    { name: "Azure", icon: "https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg", color: "#0078D4" },
+    { name: "Google Cloud", icon: "https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg", color: "#4285F4" },
+    { name: "Jenkins", icon: "https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg", color: "#D33833" },
+    { name: "Ansible", icon: "https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/ansible/ansible-original.svg", color: "#EE0000" },
+    { name: "Terraform", icon: "https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/terraform/terraform-original.svg", color: "#7B42BC" },
+    { name: "Cloudflare", icon: "https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg", color: "#F38020" }
   ],
 
   "AI & Machine Learning": [
-    { name: "OpenAI", icon: "https://static.vecteezy.com/system/resources/previews/021/059/827/non_2x/chatgpt-logo-chat-gpt-icon-on-white-background-free-vector.jpg", color: "#10A37F" },
-    { name: "ChatGPT", icon: "https://static.vecteezy.com/system/resources/previews/021/059/827/non_2x/chatgpt-logo-chat-gpt-icon-on-white-background-free-vector.jpg", color: "#10A37F" },
-    { name: "Claude AI", icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbcZqKSWnKOK8koNnPz7p3h8TX8XTLn8TQdA&s", color: "#D97706" },
-    { name: "Gemini", icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-gemini-icon.png", color: "#4285F4" },
+    { name: "TensorFlow", icon: "https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg", color: "#FF6F00" },
+    { name: "PyTorch", icon: "https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg", color: "#EE4C2C" },
+    { name: "Scikit-learn", icon: "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg", color: "#F7931E" },
+    { name: "Jupyter", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original.svg", color: "#F37626" },
+    { name: "OpenCV", icon: "https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg", color: "#5C3EE8" },
+    { name: "OpenAI", icon: "https://raw.githubusercontent.com/simple-icons/simple-icons/master/icons/openai.svg", color: "#412991" },
+    { name: "NumPy", icon: "https://www.vectorlogo.zone/logos/numpy/numpy-icon.svg", color: "#013243" },
+    { name: "Pandas", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg", color: "#150458" },
     { name: "Midjourney", icon: "https://cdn.worldvectorlogo.com/logos/midjourney.svg", color: "#000000" },
-    { name: "DALL-E", icon: "https://static.vecteezy.com/system/resources/previews/021/059/827/non_2x/chatgpt-logo-chat-gpt-icon-on-white-background-free-vector.jpg", color: "#10A37F" },
-    { name: "Stable Diffusion", icon: "https://cdn.worldvectorlogo.com/logos/stability-ai.svg", color: "#000000" },
-    { name: "Runway ML", icon: "https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6408f6e7b5811271dc883aa8_favicon-32x32.png", color: "#000000" }
+    { name: "Stable Diffusion", icon: "https://cdn.worldvectorlogo.com/logos/stability-ai.svg", color: "#000000" }
+  ],
+
+  "3D Engines & Game Development": [
+    { name: "Unity", icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg", color: "#000000" },
+    { name: "Unreal Engine", icon: "https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg", color: "#0E1128" },
+    { name: "Blender", icon: "https://download.blender.org/branding/community/blender_community_badge_white.svg", color: "#F5792A" },
+    { name: "Godot", icon: "https://www.vectorlogo.zone/logos/godotengine/godotengine-icon.svg", color: "#478CBF" },
+    { name: "Snap Lens Studio", icon: "https://raw.githubusercontent.com/simple-icons/simple-icons/master/icons/snapchat.svg", color: "#FFFC00" }
   ],
 
   "Video Generation & AI Video": [
@@ -99,12 +134,7 @@ const skillCategories = {
 const SkillItem = ({ skill }: { skill: { name: string; icon: string; color: string } }) => (
   <motion.div
     whileHover={{ scale: 1.05 }}
-    className="flex flex-col items-center glass p-4 rounded-lg shadow-lg transition-all duration-300"
-    style={{
-      background: `linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)`,
-      borderColor: skill.color,
-      boxShadow: `0 4px 12px rgba(0,0,0,0.15), 0 0 5px ${skill.color}40`
-    }}
+    className="flex flex-col items-center glass p-4 rounded-lg transition-all duration-300"
   >
     <div className="h-12 w-12 mb-3 flex items-center justify-center">
       <img

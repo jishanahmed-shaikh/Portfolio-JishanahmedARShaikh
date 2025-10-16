@@ -35,15 +35,15 @@ const SpeakerSessions = () => {
 
     const upcomingSessions = [
         {
-            title: "AI in Creative Industries",
-            event: "Creative Tech Summit",
-            date: "April 2024",
+            title: "Leveraging AI in Education",
+            event: "Ongoing Sprints Globally",
+            date: "October 2025",
             status: "Upcoming"
         },
         {
-            title: "The Evolution of Web Technologies",
-            event: "Web Dev Conference",
-            date: "May 2024",
+            title: "The Evolution of Film Making and AI Tools",
+            event: "Post AI x Film Making Festival (YouTube and Other Social Channels)",
+            date: "October 2025",
             status: "Upcoming"
         }
     ];

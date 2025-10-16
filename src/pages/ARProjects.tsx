@@ -80,19 +80,9 @@ const ARProjects = () => {
       impact: "Used by 1000+ developers"
     },
     {
-      title: "AR Development Tutorials",
-      description: "Creating educational content and tutorials for AR development",
-      impact: "50K+ views on YouTube"
-    },
-    {
       title: "AR Community Building",
       description: "Building and nurturing AR developer communities",
       impact: "500+ active members"
-    },
-    {
-      title: "Industry Consulting",
-      description: "Advising companies on AR strategy and implementation",
-      impact: "20+ successful projects"
     }
   ];
 
