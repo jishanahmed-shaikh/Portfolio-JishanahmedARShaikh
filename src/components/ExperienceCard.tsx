@@ -27,7 +27,7 @@ const ExperienceCard = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.1 }}
       viewport={{ once: true }}
-      className="liquid-glass liquid-glass-blue liquid-glass-interactive liquid-glass-card"
+      className="glass p-6 bg-gradient-to-br from-white/10 to-white/5 hover:from-white/15 hover:to-white/10 transition-all duration-300"
     >
       <div className="flex items-center mb-4">
         <Briefcase className="w-6 h-6 mr-3 text-blue-400" />

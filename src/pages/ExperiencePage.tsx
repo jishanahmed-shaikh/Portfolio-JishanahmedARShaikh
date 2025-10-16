@@ -26,7 +26,7 @@ const experiences = [
     company: "Google Inc. - Google Cloud Learning Services",
     period: "Mar 2025 - Jun 2025",
     description: "Training 2,000+ professionals in cloud architecture, AI APIs, and containerization on GCP. Built React-based dashboards with Firestore + Cloud Functions. Achieved 95% completion rate via gamified challenges.",
-    type: "current",
+    type: "past",
     skills: ["GCP", "Kubernetes", "Terraform", "React", "Cloud Functions", "BigQuery"]
   },
   {
@@ -42,7 +42,7 @@ const experiences = [
     company: "Pieces for Developers (USA)",
     period: "Dec 2024 - May 2025",
     description: "Advocating AI-assisted workflows through live sessions on Pieces OS & Contextual APIs. Built demo extensions with AI-driven code suggestions. Boosted engagement by 20% through community showcases.",
-    type: "current",
+    type: "past",
     skills: ["AI APIs", "Pieces OS", "JavaScript", "Developer Tools", "Community Management"]
   },
   {
@@ -50,7 +50,7 @@ const experiences = [
     company: "ArcadeOps Community",
     period: "Apr 2025 - Jun 2025",
     description: "Built a global cloud learning community of 2,000+ members. Partnered with 5+ international tech organizations for upskilling and mentorship programs.",
-    type: "current",
+    type: "past",
     skills: ["Community Building", "Leadership", "Cloud Technologies", "International Partnerships"]
   },
   {
@@ -58,7 +58,7 @@ const experiences = [
     company: "Google Developer Groups on Campus - APSIT",
     period: "Oct 2024 - May 2025",
     description: "Organized Cloud & DevOps bootcamps for 500+ participants. Mentored students on deploying cloud-native applications and modern development practices.",
-    type: "current",
+    type: "past",
     skills: ["GCP", "DevOps", "Student Mentorship", "Cloud Native", "Technical Education"]
   },
   {
