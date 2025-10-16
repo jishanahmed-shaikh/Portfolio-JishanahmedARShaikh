@@ -4,19 +4,19 @@ import { Link } from "react-router-dom";
 
 const featuredExperiences = [
   {
-    role: "Founder & Director",
-    company: "ArcadeOps Community",
-    period: "2022 - Present"
+    role: "Full Stack Developer",
+    company: "PassionBytes PVT LTD",
+    period: "July 2025 - Present"
   },
   {
-    role: "SnapAR Developer",
+    role: "SnapAR Creator",
     company: "Snap Inc.",
-    period: "2020 - Present"
+    period: "Sept 2024 - Present"
   },
   {
-    role: "Cloud Facilitator",
-    company: "Google Cloud",
-    period: "2023 - Present"
+    role: "Google Cloud Facilitator",
+    company: "Google Inc.",
+    period: "Mar 2025 - Jun 2025"
   }
 ];
 
@@ -35,7 +35,7 @@ const ExperienceCard = () => {
       </div>
       
       <p className="text-gray-400 mb-6">
-        Professional journey spanning cloud architecture, community building, and AR development.
+        Professional journey from founding Antibits Solutions to full-stack development at PassionBytes, with 3M+ AR users impacted.
       </p>
       
       <div className="space-y-4 mb-6">
@@ -49,7 +49,7 @@ const ExperienceCard = () => {
       </div>
       
       <div className="text-sm text-gray-400 mb-4">
-        <span className="text-blue-400 font-semibold">10+</span> professional roles
+        <span className="text-blue-400 font-semibold">300+</span> clients served
       </div>
       
       <Link 

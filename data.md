@@ -137,17 +137,17 @@ API Integration, Web Scraping, ERP Systems (SAP, Odoo, Oracle NetSuite), CRM (Sa
 - Top 40 Finalist - XR Creator Hackathon, WAVES 2025, Ministry of Information & Broadcast India
 - Top 50 Finalist - Volkswagen iMobilothon 2024, Placement Opportunity
 - Mentor @ BNB Hack Bombay 2025
--	Mentor & Judge @ Cognition GameJam 2025, SIES GST
--	Judge @ HackNova 2025, CSA APSIT
--	Evaluator @ Smart India Hackathon 2025, Ministry of Educations’ Innovation Cell, AICTE, India
--	Special Prize - Someshwar Technothon 2022 (MH, India)
--	Winner - E-Cyclothon 2022 (MH, India)
--	Winner - EXALT Hackathon 2023 (MH, India)
--	3rd Runner-up - HackNovate 2025 [International]
--	3rd Winner - Hackonomics 2025 [International]
--	Winner - TheTimeHack 2025 [International]
--	Best Visual Design - HackSocial 2025 [International]
--	3rd Winner - SnapAR Reimagination Challenge 2025 [MH, India]
+- Mentor & Judge @ Cognition GameJam 2025, SIES GST
+- Judge @ HackNova 2025, CSA APSIT
+- Evaluator @ Smart India Hackathon 2025, Ministry of Educations’ Innovation Cell, AICTE, India
+- Special Prize - Someshwar Technothon 2022 (MH, India)
+- Winner - E-Cyclothon 2022 (MH, India)
+- Winner - EXALT Hackathon 2023 (MH, India)
+- 3rd Runner-up - HackNovate 2025 [International]
+- 3rd Winner - Hackonomics 2025 [International]
+- Winner - TheTimeHack 2025 [International]
+- Best Visual Design - HackSocial 2025 [International]
+- 3rd Winner - SnapAR Reimagination Challenge 2025 [MH, India]
 
 
 ---
@@ -168,6 +168,5 @@ API Integration, Web Scraping, ERP Systems (SAP, Odoo, Oracle NetSuite), CRM (Sa
 **Founding Director – Community** | Apr 2025 – Jun 2025  
 - Built a global cloud learning community of 2,000+ members.  
 - Partnered with 5+ international tech orgs for upskilling and mentorship.  
-
 
 ---

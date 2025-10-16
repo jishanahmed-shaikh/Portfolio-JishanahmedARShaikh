@@ -60,7 +60,7 @@ const OverviewSection = () => {
               <span className="text-xs px-2 py-1 rounded-full bg-green-500/20 text-green-300">Workshops</span>
             </div>
             <div className="text-sm text-gray-400 mb-4">
-              <span className="text-blue-400 font-semibold">25+</span> sessions delivered
+              <span className="text-blue-400 font-semibold">2000+</span> professionals trained
             </div>
             <Link 
               to="/speaker-sessions" 
@@ -93,7 +93,7 @@ const OverviewSection = () => {
               <span className="text-xs px-2 py-1 rounded-full bg-orange-500/20 text-orange-300">Conferences</span>
             </div>
             <div className="text-sm text-gray-400 mb-4">
-              <span className="text-blue-400 font-semibold">15+</span> events organized
+              <span className="text-blue-400 font-semibold">15+</span> hackathon wins
             </div>
             <Link 
               to="/events-conferences" 
@@ -159,7 +159,7 @@ const OverviewSection = () => {
               <span className="text-xs px-2 py-1 rounded-full bg-indigo-500/20 text-indigo-300">3D Modeling</span>
             </div>
             <div className="text-sm text-gray-400 mb-4">
-              <span className="text-blue-400 font-semibold">1.5M+</span> users reached
+              <span className="text-blue-400 font-semibold">3M+</span> users reached
             </div>
             <Link 
               to="/ar-projects" 

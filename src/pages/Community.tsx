@@ -86,7 +86,7 @@ const Community = () => {
                       rel="noopener noreferrer"
                       className="text-blue-400 hover:text-blue-300 transition-colors"
                     >
-                      View Project →
+                      View Community →
                     </a>
                   )}
                 </div>
