@@ -44,7 +44,55 @@ const skills = [
   { name: "Raspberry Pi", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg", color: "#A22846" },
   
   // Design & Visualization
-  { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", color: "#F24E1E" }
+  { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", color: "#F24E1E" },
+  
+  // AI Tools & Platforms
+  { name: "OpenAI", icon: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg", color: "#10A37F" },
+  { name: "ChatGPT", icon: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg", color: "#10A37F" },
+  { name: "Claude AI", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/anthropic.svg", color: "#D97706" },
+  { name: "Gemini", icon: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg", color: "#4285F4" },
+  { name: "Midjourney", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/midjourney.svg", color: "#000000" },
+  { name: "DALL-E", icon: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg", color: "#10A37F" },
+  { name: "Stable Diffusion", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/stablediffusion.svg", color: "#000000" },
+  { name: "Runway ML", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/runway.svg", color: "#000000" },
+  
+  // Video Generation & AI Video Tools
+  { name: "Sora", icon: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg", color: "#10A37F" },
+  { name: "Veo", icon: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg", color: "#4285F4" },
+  { name: "Pika Labs", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/pika.svg", color: "#FF6B6B" },
+  { name: "Luma AI", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/luma.svg", color: "#000000" },
+  { name: "Synthesia", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/synthesia.svg", color: "#7C3AED" },
+  { name: "D-ID", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/did.svg", color: "#000000" },
+  
+  // Video Editing & Production
+  { name: "Adobe Premiere", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg", color: "#9999FF" },
+  { name: "Adobe After Effects", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg", color: "#9999FF" },
+  { name: "Adobe Photoshop", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg", color: "#31A8FF" },
+  { name: "Adobe Illustrator", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg", color: "#FF9A00" },
+  { name: "ClipChamp", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoftclipchamp.svg", color: "#0078D4" },
+  { name: "DaVinci Resolve", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/davinciresolve.svg", color: "#233A51" },
+  { name: "Final Cut Pro", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/finalcutpro.svg", color: "#000000" },
+  { name: "CapCut", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/capcut.svg", color: "#000000" },
+  
+  // Audio Production & DJ Tools
+  { name: "Virtual DJ", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/virtualdj.svg", color: "#FF0000" },
+  { name: "Serato DJ", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/serato.svg", color: "#00D4AA" },
+  { name: "Audacity", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/audacity/audacity-original.svg", color: "#0000CC" },
+  { name: "FL Studio", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/flstudio.svg", color: "#FF7300" },
+  { name: "Ableton Live", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/abletonlive.svg", color: "#000000" },
+  { name: "Logic Pro", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/logicpro.svg", color: "#000000" },
+  { name: "Pro Tools", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/protools.svg", color: "#7ACB10" },
+  
+  // Content Creation & Streaming
+  { name: "OBS Studio", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/obsstudio.svg", color: "#302E31" },
+  { name: "Streamlabs", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/streamlabs.svg", color: "#31C3A2" },
+  { name: "Canva", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg", color: "#00C4CC" },
+  { name: "Blender", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg", color: "#F5792A" },
+  
+  // AI Voice & Audio Tools
+  { name: "ElevenLabs", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/elevenlabs.svg", color: "#000000" },
+  { name: "Murf AI", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/murf.svg", color: "#6366F1" },
+  { name: "Speechify", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/speechify.svg", color: "#FF6B35" }
 ];
 
 const SkillItem = ({ skill }: { skill: { name: string; icon: string; color: string } }) => (
@@ -99,8 +147,9 @@ const SkillsPage = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl text-gray-400 mb-12 max-w-3xl"
           >
-            A comprehensive overview of my technical expertise across multiple domains including programming languages,
-            frameworks, cloud platforms, and specialized tools that I use to build innovative solutions.
+            A comprehensive overview of my technical expertise spanning programming languages, cloud platforms, AI tools, 
+            video generation, audio production, and multimedia content creation. From full-stack development to AI-powered 
+            content creation and professional audio/video editing.
           </motion.p>
 
           <motion.div

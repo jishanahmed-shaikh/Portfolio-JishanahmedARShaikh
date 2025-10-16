@@ -6,16 +6,16 @@ const Community = () => {
   const communityProjects = [
     {
       title: "ArcadeOps Community",
-      description: "Built and scaled a tech community from scratch, reaching over 1500+ members. Organized workshops, hackathons, and networking events.",
+      description: "Built and scaled a tech community from scratch, reaching over 2000+ members. Organized workshops, hackathons, and networking events.",
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
       link: "https://www.linkedin.com/company/arcadeops",
-      achievements: ["1500+ Members", "50+ Events", "Global Reach"]
+      achievements: ["2000+ Members", "50+ Events", "Global Reach"]
     },
     {
       title: "Developer Mentorship Program",
-      description: "Mentored 100+ developers through career transitions and skill development programs.",
+      description: "Mentored 50+ developers through career transitions and skill development programs.",
       image: "https://images.unsplash.com/photo-1531482615713-2afd69097998",
-      achievements: ["100+ Mentees", "Career Growth", "Skill Development"]
+      achievements: ["50+ Mentees", "Career Growth", "Skill Development"]
     },
     {
       title: "Open Source Contributions",
@@ -34,7 +34,7 @@ const Community = () => {
           <Link to="/" className="text-blue-400 hover:text-blue-300 mb-8 inline-block">
             ← Back to Home
           </Link>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -43,7 +43,7 @@ const Community = () => {
           >
             <h1 className="text-5xl font-bold mb-6 gradient-text">Community Building</h1>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Passionate about building and nurturing tech communities, fostering collaboration, 
+              Passionate about building and nurturing tech communities, fostering collaboration,
               and creating spaces where developers and innovators can grow together.
             </p>
           </motion.div>
@@ -59,8 +59,8 @@ const Community = () => {
                 className="glass rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300"
               >
                 <div className="h-48 overflow-hidden">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                     loading="lazy"
@@ -71,8 +71,8 @@ const Community = () => {
                   <p className="text-gray-400 mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.achievements.map((achievement, i) => (
-                      <span 
-                        key={i} 
+                      <span
+                        key={i}
                         className="text-sm px-2 py-1 rounded-full bg-blue-500/20 text-blue-300"
                       >
                         {achievement}
@@ -104,11 +104,11 @@ const Community = () => {
             <h2 className="text-3xl font-bold mb-6 gradient-text">Community Impact</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div>
-                <div className="text-4xl font-bold text-blue-400 mb-2">1500+</div>
+                <div className="text-4xl font-bold text-blue-400 mb-2">2000+</div>
                 <div className="text-gray-400">Community Members</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-green-400 mb-2">100+</div>
+                <div className="text-4xl font-bold text-green-400 mb-2">50+</div>
                 <div className="text-gray-400">Events Organized</div>
               </div>
               <div>
