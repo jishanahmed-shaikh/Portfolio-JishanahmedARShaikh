@@ -58,10 +58,10 @@ const CertificationCard = ({ cert, index }: { cert: any, index: number }) => (
     className="glass rounded-xl overflow-hidden transition-all duration-300 bg-gradient-to-br from-white/10 to-white/5"
   >
     <div className="p-4 flex justify-center bg-gradient-to-r from-gray-900 to-black">
-      <img 
-        src={cert.image} 
-        alt={cert.title} 
-        className="h-32 w-32 object-contain" 
+      <img
+        src={cert.image}
+        alt={cert.title}
+        className="h-32 w-32 object-contain"
         loading="lazy"
         decoding="async"
       />
@@ -81,14 +81,14 @@ const CertificationsPage = () => {
       <ParticleBackground />
       <div className="relative z-10">
         <div className="container mx-auto px-4 py-20">
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8 transition-colors"
           >
             <ArrowLeft className="w-5 h-5 mr-2" />
             Back to Home
           </Link>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -99,14 +99,14 @@ const CertificationsPage = () => {
             <h1 className="text-5xl font-bold gradient-text">Certifications & Credibility</h1>
           </motion.div>
 
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl text-gray-400 mb-12 max-w-3xl"
           >
-            Professional credentials that validate my expertise across cloud platforms, containerization, 
-            and infrastructure technologies. These certifications demonstrate my commitment to staying 
+            Professional credentials that validate my expertise across cloud platforms, containerization,
+            and infrastructure technologies. These certifications demonstrate my commitment to staying
             current with industry standards and best practices.
           </motion.p>
 

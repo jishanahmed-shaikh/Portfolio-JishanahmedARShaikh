@@ -151,15 +151,15 @@ const SpeakerSessions = () => {
                                 <div className="text-gray-400">Sessions Delivered</div>
                             </div>
                             <div>
-                                <div className="text-4xl font-bold text-green-400 mb-2">5000+</div>
+                                <div className="text-4xl font-bold text-green-400 mb-2">3000+</div>
                                 <div className="text-gray-400">Total Audience</div>
                             </div>
                             <div>
-                                <div className="text-4xl font-bold text-purple-400 mb-2">15+</div>
+                                <div className="text-4xl font-bold text-purple-400 mb-2">5+</div>
                                 <div className="text-gray-400">Countries Reached</div>
                             </div>
                             <div>
-                                <div className="text-4xl font-bold text-orange-400 mb-2">50+</div>
+                                <div className="text-4xl font-bold text-orange-400 mb-2">20+</div>
                                 <div className="text-gray-400">Topics Covered</div>
                             </div>
                         </div>
