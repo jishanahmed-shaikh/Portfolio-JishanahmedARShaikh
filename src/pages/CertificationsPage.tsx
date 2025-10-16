@@ -5,46 +5,53 @@ import ParticleBackground from "../components/ParticleBackground";
 
 const certifications = [
   {
-    title: "Google Cloud Professional Architect",
-    issuer: "Google Cloud",
-    date: "2023",
-    image: "https://images.credly.com/size/680x680/images/5420d43c-a4bd-4152-81a5-3c0fff2b2c1a/image.png",
-    description: "Demonstrates expertise in designing and managing Google Cloud solutions"
+    title: "500+ Skill Badges on Google Cloud SkillBoost",
+    issuer: "Google Cloud Skills Boost",
+    date: "2024-2025",
+    image: "https://www.gstatic.com/devrel-devsite/prod/v2210deb8920cd4a55bd580441aa58e7853c206539e5ca8fb3f1bf18e9c8db9ab0/cloud/images/cloud-logo.svg",
+    description: "Earned over 500 skill badges demonstrating comprehensive expertise across Google Cloud services, AI/ML, cloud architecture, and advanced cloud technologies. Top 1% of learners globally."
   },
   {
-    title: "AWS Certified Solutions Architect",
+    title: "AWS Certified Cloud Graduate",
     issuer: "Amazon Web Services",
-    date: "2022",
-    image: "https://images.credly.com/size/680x680/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png",
-    description: "Validates technical expertise in designing distributed systems on AWS"
+    date: "2024",
+    image: "https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png",
+    description: "Foundational certification demonstrating understanding of AWS cloud services, architecture principles, security best practices, and cost optimization strategies."
   },
   {
-    title: "Microsoft Azure Administrator",
-    issuer: "Microsoft",
-    date: "2021",
-    image: "https://images.credly.com/size/680x680/images/336eebfc-0ac3-4553-9a67-b402f491f185/azure-administrator-associate-600x600.png",
-    description: "Proves skills in implementing, managing, and monitoring Azure environments"
+    title: "Data Analysis with Python",
+    issuer: "FreeCodeCamp",
+    date: "2024",
+    image: "https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg",
+    description: "Comprehensive certification covering advanced data analysis techniques using Python libraries including Pandas, NumPy, Matplotlib, and statistical analysis methods."
   },
   {
-    title: "Certified Kubernetes Administrator",
-    issuer: "Cloud Native Computing Foundation",
-    date: "2022",
-    image: "https://images.credly.com/size/680x680/images/8b8ed108-e77d-4396-ac59-2504583b9d54/cka_from_cncftrainingcertification.png",
-    description: "Demonstrates expertise in Kubernetes cluster administration"
+    title: "Developing GenAI Apps with Gemini & Streamlit",
+    issuer: "Google Cloud Skills Boost",
+    date: "2024",
+    image: "https://www.gstatic.com/devrel-devsite/prod/v2210deb8920cd4a55bd580441aa58e7853c206539e5ca8fb3f1bf18e9c8db9ab0/cloud/images/cloud-logo.svg",
+    description: "Specialized certification for building generative AI applications using Google's Gemini AI model and Streamlit framework for creating interactive AI-powered web applications."
   },
   {
-    title: "Terraform Associate",
-    issuer: "HashiCorp",
-    date: "2022",
-    image: "https://images.credly.com/size/680x680/images/99289602-861e-4929-8277-773e63a2fa6f/image.png",
-    description: "Validates foundational skills in Infrastructure as Code using Terraform"
+    title: "Prompt Design in Vertex AI",
+    issuer: "Google Cloud Skills Boost",
+    date: "2024",
+    image: "https://www.gstatic.com/devrel-devsite/prod/v2210deb8920cd4a55bd580441aa58e7853c206539e5ca8fb3f1bf18e9c8db9ab0/cloud/images/cloud-logo.svg",
+    description: "Advanced certification focusing on prompt engineering and design patterns in Vertex AI, covering best practices for AI model interaction and optimization."
   },
   {
-    title: "Docker Certified Associate",
-    issuer: "Docker",
-    date: "2021",
-    image: "https://images.credly.com/size/680x680/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png",
-    description: "Demonstrates proficiency in containerization and Docker technologies"
+    title: "Data Science & Machine Learning with R",
+    issuer: "Udemy",
+    date: "2023",
+    image: "https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg",
+    description: "Comprehensive course covering data science methodologies, statistical analysis, and machine learning algorithms using R programming language for data visualization and predictive modeling."
+  },
+  {
+    title: "Young Python Professional",
+    issuer: "Infosys",
+    date: "2023",
+    image: "https://www.infosys.com/content/dam/infosys-web/en/global-resource/media-resources/infosys-logo-svg.svg",
+    description: "Professional certification recognizing advanced Python programming skills, object-oriented programming expertise, software development best practices, and professional coding standards."
   }
 ];
 

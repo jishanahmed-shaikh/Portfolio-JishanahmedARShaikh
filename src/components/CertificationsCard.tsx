@@ -4,19 +4,19 @@ import { Link } from "react-router-dom";
 
 const featuredCertifications = [
   {
-    title: "Google Cloud Professional Architect",
+    title: "500+ Google Cloud Skill Badges",
     issuer: "Google Cloud",
-    image: "https://images.credly.com/size/680x680/images/5420d43c-a4bd-4152-81a5-3c0fff2b2c1a/image.png"
+    image: "https://www.gstatic.com/devrel-devsite/prod/v2210deb8920cd4a55bd580441aa58e7853c206539e5ca8fb3f1bf18e9c8db9ab0/cloud/images/cloud-logo.svg"
   },
   {
-    title: "AWS Solutions Architect",
-    issuer: "Amazon Web Services",
-    image: "https://images.credly.com/size/680x680/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
+    title: "AWS Certified Cloud Graduate",
+    issuer: "AWS",
+    image: "https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png"
   },
   {
-    title: "Kubernetes Administrator",
-    issuer: "CNCF",
-    image: "https://images.credly.com/size/680x680/images/8b8ed108-e77d-4396-ac59-2504583b9d54/cka_from_cncftrainingcertification.png"
+    title: "Data Analysis with Python",
+    issuer: "FreeCodeCamp",
+    image: "https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
   }
 ];
 
@@ -53,7 +53,7 @@ const CertificationsCard = () => {
       </div>
       
       <div className="text-sm text-gray-400 mb-4">
-        <span className="text-blue-400 font-semibold">6+</span> professional certifications
+        <span className="text-blue-400 font-semibold">500+</span> Google Cloud badges
       </div>
       
       <Link 

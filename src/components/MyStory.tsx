@@ -26,13 +26,16 @@ const MyStory = () => {
             className="space-y-6"
           >
             <p className="text-lg text-gray-300">
-              My journey in technology began with a passion for innovation and problem-solving. As a Cloud Engineer and Tech Leader with over 5 years of experience, I've specialized in architecting robust cloud solutions and leading technological initiatives across various domains.
+              My journey in technology began with a deep curiosity for how ideas transform into impactful realities. Over the years, I’ve evolved into a Full Stack Engineer with expertise in Cloud, AI, and Data Engineering, building scalable systems that bridge innovation with real-world usability.
             </p>
             <p className="text-lg text-gray-300">
-              My entrepreneurial drive led me to establish Antibits Solutions, serving 300+ clients with innovative tech solutions, and founding the ArcadeOps Community, a Google Cloud-focused platform that has trained over 1500 students.
+              As the founder of Antibits Solutions, I’ve delivered cutting-edge tech solutions to over 300 clients, blending cloud-native architectures with intelligent automation. My community initiative, ArcadeOps, has empowered 2,000+ students to master Google Cloud and modern DevOps practices fueling the next generation of cloud innovators.
             </p>
             <p className="text-lg text-gray-300">
-              Beyond my core expertise in Cloud Computing and Business Leadership, I explore creative outlets through AR Development as a SnapAR Developer, creating experiences reaching over 1.5M+ users. My background in Embedded Systems has given me unique insights into the full technology stack.
+              Beyond engineering, I’m passionate about Augmented Reality and AI-driven Filmmaking, where I merge storytelling, technology, and design to create immersive digital experiences. My creative work as a SnapAR Developer has reached over 3 million users, showcasing how art and AI can redefine human connection.
+            </p>
+            <p className="text-lg text-gray-300">
+              Rooted in a foundation of Embedded Systems and IoT, I bring an end-to-end perspective to technology connecting hardware, data, and intelligence to craft experiences that inspire, inform, and innovate.
             </p>
           </motion.div>
 

@@ -4,19 +4,19 @@ import { Link } from "react-router-dom";
 
 const featuredRecognitions = [
   {
-    title: "Top AR Creator",
+    title: "3M+ Users Impacted via AR Creations",
     organization: "Snap Inc.",
-    year: "2023"
+    year: "2024-Present"
   },
   {
-    title: "Community Builder of the Year",
-    organization: "Google Developer Groups",
-    year: "2023"
+    title: "Top 40 Finalist - XR Creator Hackathon",
+    organization: "WAVES 2025, Ministry of I&B India",
+    year: "2025"
   },
   {
-    title: "Innovation Excellence Award",
-    organization: "ArcadeOps Community",
-    year: "2022"
+    title: "Winner - TheTimeHack 2025",
+    organization: "TheTimeHack International",
+    year: "2025"
   }
 ];
 
@@ -51,7 +51,7 @@ const RecognitionsCard = () => {
       </div>
       
       <div className="text-sm text-gray-400 mb-4">
-        <span className="text-blue-400 font-semibold">6+</span> awards received
+        <span className="text-blue-400 font-semibold">15+</span> hackathon wins
       </div>
       
       <Link 

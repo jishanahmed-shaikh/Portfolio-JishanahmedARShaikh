@@ -5,52 +5,116 @@ import ParticleBackground from "../components/ParticleBackground";
 
 const recognitions = [
   {
-    title: "Top AR Creator",
+    title: "3M+ Users Impacted via AR Creations",
     organization: "Snap Inc.",
-    year: "2023",
-    description: "Recognized for creating AR experiences with over 1.5M+ global users",
+    year: "2024-Present",
+    description: "Created interactive AR experiences for Snapchat and Spectacles that reached and engaged over 3 million users globally across 50+ countries.",
     icon: <Star className="w-6 h-6" />,
-    category: "Achievement"
+    category: "Impact"
   },
   {
-    title: "Community Builder of the Year",
-    organization: "Google Developer Groups",
-    year: "2023",
-    description: "Awarded for outstanding contribution to developer community growth",
+    title: "Top 40 Finalist - XR Creator Hackathon",
+    organization: "WAVES 2025, Ministry of I&B, India",
+    year: "2025",
+    description: "Selected as top 40 finalist in prestigious XR Creator Hackathon organized by Ministry of Information & Broadcasting, India, competing against 1000+ participants nationwide.",
     icon: <Trophy className="w-6 h-6" />,
+    category: "Competition"
+  },
+  {
+    title: "Top 50 Finalist - Volkswagen iMobilothon",
+    organization: "Volkswagen",
+    year: "2024",
+    description: "Reached top 50 in Volkswagen's global mobility innovation hackathon focusing on future transportation solutions with placement opportunity.",
+    icon: <Award className="w-6 h-6" />,
+    category: "Competition"
+  },
+  {
+    title: "Winner - TheTimeHack 2025",
+    organization: "TheTimeHack International",
+    year: "2025",
+    description: "First place winner in international time-constrained hackathon demonstrating rapid prototyping and innovation skills, building complete solution in 24 hours.",
+    icon: <Trophy className="w-6 h-6" />,
+    category: "Competition"
+  },
+  {
+    title: "Winner - E-Cyclothon 2022",
+    organization: "E-Cyclothon, Maharashtra, India",
+    year: "2022",
+    description: "First place winner in sustainability-focused hackathon for developing innovative eco-friendly technology solutions for waste management.",
+    icon: <Trophy className="w-6 h-6" />,
+    category: "Competition"
+  },
+  {
+    title: "Winner - EXALT Hackathon 2023",
+    organization: "EXALT, Maharashtra, India",
+    year: "2023",
+    description: "Won first place for innovative AI-powered technology solution addressing real-world challenges in the healthcare sector.",
+    icon: <Trophy className="w-6 h-6" />,
+    category: "Competition"
+  },
+  {
+    title: "3rd Winner - Hackonomics 2025",
+    organization: "Hackonomics International",
+    year: "2025",
+    description: "Third place in international economics and technology focused hackathon for developing innovative blockchain-based financial solution.",
+    icon: <Award className="w-6 h-6" />,
+    category: "Competition"
+  },
+  {
+    title: "3rd Winner - SnapAR Reimagination Challenge",
+    organization: "Snap Inc., Maharashtra, India",
+    year: "2025",
+    description: "Third place in Snap's AR innovation challenge for creative and technical excellence in developing advanced AR experience with innovative interactions.",
+    icon: <Award className="w-6 h-6" />,
+    category: "Competition"
+  },
+  {
+    title: "3rd Runner-Up - HackNovate 2025",
+    organization: "HackNovate International",
+    year: "2025",
+    description: "Fourth place in international hackathon with participants from multiple countries, competing against international teams and securing top position.",
+    icon: <Award className="w-6 h-6" />,
+    category: "Competition"
+  },
+  {
+    title: "Best Visual Design - HackSocial 2025",
+    organization: "HackSocial International",
+    year: "2025",
+    description: "Awarded for exceptional visual design and user experience in social impact hackathon, recognized for outstanding UI/UX design skills.",
+    icon: <Star className="w-6 h-6" />,
+    category: "Design"
+  },
+  {
+    title: "Contributor - GSSOC 2024",
+    organization: "GirlScript Summer of Code",
+    year: "2024",
+    description: "Active contributor in one of India's largest open source programs for students, contributed to multiple projects and mentored newcomers.",
+    icon: <Star className="w-6 h-6" />,
+    category: "Open Source"
+  },
+  {
+    title: "Inter-States Football Competition Representative",
+    organization: "Junior College Sports",
+    year: "Academic Year",
+    description: "Represented Junior College at Inter-States Football Competition, demonstrating leadership and teamwork skills in competitive sports.",
+    icon: <Trophy className="w-6 h-6" />,
+    category: "Sports"
+  },
+  {
+    title: "Special Prize - Someshwar Technothon 2022",
+    organization: "Someshwar Technothon, Maharashtra, India",
+    year: "2022",
+    description: "Received special recognition for innovative technology solution and exceptional technical implementation in regional technology competition.",
+    icon: <Award className="w-6 h-6" />,
+    category: "Competition"
+  },
+  {
+    title: "Hackathon Mentor & Judge",
+    organization: "Multiple Organizations",
+    year: "2025",
+    description: "Served as mentor and judge at prestigious hackathons including BNB Hack Bombay 2025, Cognition GameJam 2025, HackNova 2025, and Smart India Hackathon 2025.",
+    icon: <Star className="w-6 h-6" />,
     category: "Leadership"
-  },
-  {
-    title: "Innovation Excellence Award",
-    organization: "ArcadeOps Community",
-    year: "2022",
-    description: "For building and scaling a technical community to 1500+ members",
-    icon: <Award className="w-6 h-6" />,
-    category: "Innovation"
-  },
-  {
-    title: "Cloud Advocate Recognition",
-    organization: "Google Cloud",
-    year: "2022",
-    description: "Recognized for exceptional contribution to cloud technology adoption",
-    icon: <Star className="w-6 h-6" />,
-    category: "Technical"
-  },
-  {
-    title: "Startup Founder Recognition",
-    organization: "Antibits Solutions",
-    year: "2021",
-    description: "Successfully founded and scaled tech consultancy serving 300+ clients",
-    icon: <Trophy className="w-6 h-6" />,
-    category: "Entrepreneurship"
-  },
-  {
-    title: "Technical Excellence Award",
-    organization: "Modified Auto Club Racing",
-    year: "2018",
-    description: "For developing embedded systems that improved racing vehicle performance",
-    icon: <Award className="w-6 h-6" />,
-    category: "Technical"
   }
 ];
 
