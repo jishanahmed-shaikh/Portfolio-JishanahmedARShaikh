@@ -6,84 +6,84 @@ import ParticleBackground from "../components/ParticleBackground";
 
 const experiences = [
   {
-    role: "Facilitator",
-    company: "Google Cloud Arcade Program",
-    period: "2023 - Present",
-    description: "Leading workshops and training sessions for cloud technologies adoption across enterprise clients.",
+    role: "Full Stack Developer",
+    company: "PassionBytes PVT LTD (USA | UAE | INDIA)",
+    period: "July 2025 - Present",
+    description: "Engineering scalable front-end architectures using ReactJS, TypeScript, and Tailwind CSS. Building NLP-driven AI modules for search and summarization using Python (SpaCy, Transformers). Improved load time by 30% through performance audits.",
     type: "current",
-    skills: ["GCP", "Cloud Architecture", "Training"]
+    skills: ["ReactJS", "TypeScript", "FastAPI", "PostgreSQL", "Python", "NLP", "AI/ML"]
   },
   {
-    role: "Founder & Director",
-    company: "ArcadeOps Community",
-    period: "2022 - Present",
-    description: "Built and scaled a technical community from scratch, reaching 1500+ members. Organized workshops, hackathons, and networking events.",
+    role: "SnapAR Community Developer / Creator",
+    company: "Snap Inc.",
+    period: "Sept 2024 - Present",
+    description: "Developing interactive AR experiences for Snapchat and Spectacles using React + WebGL. Leveraging Lens Studio's JavaScript API for gesture, facial, and voice-triggered interactions. Impacted 3M+ global users.",
     type: "current",
-    skills: ["Community Building", "Leadership", "Event Management"]
+    skills: ["AR Development", "Lens Studio", "React", "WebGL", "JavaScript API", "Computer Vision"]
+  },
+  {
+    role: "Facilitator - Google Cloud Arcade Program (C1 & C2)",
+    company: "Google Inc. - Google Cloud Learning Services",
+    period: "Mar 2025 - Jun 2025",
+    description: "Training 2,000+ professionals in cloud architecture, AI APIs, and containerization on GCP. Built React-based dashboards with Firestore + Cloud Functions. Achieved 95% completion rate via gamified challenges.",
+    type: "current",
+    skills: ["GCP", "Kubernetes", "Terraform", "React", "Cloud Functions", "BigQuery"]
+  },
+  {
+    role: "Head of Operations (Technology & Partnerships)",
+    company: "Lixta Network",
+    period: "Apr 2024 - Apr 2025",
+    description: "Directing AI-powered dashboard development using ReactJS, FastAPI, and Python. Architecting microservices using Docker, Redis, and Celery. Increased revenue by 30% through automation and enterprise partnerships.",
+    type: "past",
+    skills: ["ReactJS", "FastAPI", "Python", "Docker", "Redis", "Scikit-learn", "ML"]
   },
   {
     role: "Ambassador",
-    company: "Pieces for Developers",
-    period: "2022 - Present",
-    description: "Representing cutting-edge developer productivity tools and advocating best practices in software development.",
+    company: "Pieces for Developers (USA)",
+    period: "Dec 2024 - May 2025",
+    description: "Advocating AI-assisted workflows through live sessions on Pieces OS & Contextual APIs. Built demo extensions with AI-driven code suggestions. Boosted engagement by 20% through community showcases.",
     type: "current",
-    skills: ["Developer Relations", "Content Creation"]
+    skills: ["AI APIs", "Pieces OS", "JavaScript", "Developer Tools", "Community Management"]
   },
   {
-    role: "Head of Operations",
-    company: "LixtaNetwork",
-    period: "2022 - Present",
-    description: "Leading operational strategy and implementation for technology solutions across diverse client portfolios.",
+    role: "Founding Director - Community",
+    company: "ArcadeOps Community",
+    period: "Apr 2025 - Jun 2025",
+    description: "Built a global cloud learning community of 2,000+ members. Partnered with 5+ international tech organizations for upskilling and mentorship programs.",
     type: "current",
-    skills: ["Operations", "Strategy", "Client Management"]
+    skills: ["Community Building", "Leadership", "Cloud Technologies", "International Partnerships"]
   },
   {
-    role: "Cloud Head",
-    company: "GDG on Campus APSIT",
-    period: "2021 - Present",
-    description: "Leading cloud initiatives and training sessions for student developers, focused on Google Cloud technologies.",
+    role: "Head - Cloud Department",
+    company: "Google Developer Groups on Campus - APSIT",
+    period: "Oct 2024 - May 2025",
+    description: "Organized Cloud & DevOps bootcamps for 500+ participants. Mentored students on deploying cloud-native applications and modern development practices.",
     type: "current",
-    skills: ["GCP", "Community", "Technical Education"]
+    skills: ["GCP", "DevOps", "Student Mentorship", "Cloud Native", "Technical Education"]
   },
   {
-    role: "SnapAR Developer",
-    company: "Snap Inc.",
-    period: "2020 - Present",
-    description: "Creating immersive AR experiences reaching 1.5M+ users globally. Developing interactive filters and effects using Lens Studio.",
-    type: "current",
-    skills: ["AR Development", "Lens Studio", "Creative Design"]
+    role: "Business Analyst / Hardware Engineer",
+    company: "Ajmeri Enterprises (Thane)",
+    period: "Feb 2024 - Jul 2024 / May 2023 - Jan 2024",
+    description: "Built ReactJS + Power BI dashboards for client insights and data-driven decisions. Developed IoT-based diagnostic systems with embedded controllers and sensors.",
+    type: "past",
+    skills: ["ReactJS", "Power BI", "Python", "IoT", "Embedded Systems", "Analytics"]
+  },
+  {
+    role: "Lead - Embedded Systems",
+    company: "Modified Auto Club Racing - APSIT",
+    period: "Feb 2023 - Jan 2024",
+    description: "Directed IoT and embedded projects using Arduino, ESP32, and real-time sensors. Built Raspberry Pi-based data visualization dashboards for performance tracking.",
+    type: "past",
+    skills: ["Arduino", "ESP32", "Raspberry Pi", "IoT", "Data Visualization", "Embedded Systems"]
   },
   {
     role: "Founder & Head of Operations",
     company: "Antibits Solutions",
-    period: "2020 - Present",
-    description: "Founded and grew a tech consultancy serving 300+ clients with innovative solutions in web, mobile, and cloud technologies.",
-    type: "current",
-    skills: ["Entrepreneurship", "Client Relations", "Technical Leadership"]
-  },
-  {
-    role: "Business Analyst",
-    company: "Ajmeri Enterprises",
-    period: "2019 - 2020",
-    description: "Analyzed business processes and implemented automation solutions that improved operational efficiency by 35%.",
+    period: "Dec 2019 - Dec 2024",
+    description: "Founded tech venture serving 300+ clients with full-stack automation systems. Built hybrid IoT + Cloud platforms. Managed 15-member development team. Delivered 20% YoY growth through tech innovation.",
     type: "past",
-    skills: ["Process Analysis", "Automation", "Business Intelligence"]
-  },
-  {
-    role: "Chief Hardware Engineer",
-    company: "Ajmeri Enterprises",
-    period: "2018 - 2019",
-    description: "Led hardware implementation and integration for IoT solutions across industrial applications.",
-    type: "past",
-    skills: ["Hardware Design", "IoT", "Systems Integration"]
-  },
-  {
-    role: "Lead & Sr. Embedded Engineer",
-    company: "Modified Auto Club Racing",
-    period: "2017 - 2018",
-    description: "Developed embedded systems for performance optimization in racing vehicles, resulting in significant efficiency gains.",
-    type: "past",
-    skills: ["Embedded Systems", "Firmware Development", "Performance Optimization"]
+    skills: ["Entrepreneurship", "Full-Stack Development", "IoT", "Cloud Architecture", "Team Leadership"]
   }
 ];
 

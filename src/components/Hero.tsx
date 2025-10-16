@@ -65,8 +65,8 @@ const Hero = () => {
               <NavigationMenuList className="flex gap-6">
                 {/* Home */}
                 <NavigationMenuItem>
-                  <NavigationMenuLink 
-                    href="#home" 
+                  <NavigationMenuLink
+                    href="#home"
                     className="text-white hover:text-blue-300 transition-colors duration-300"
                     onClick={(e) => {
                       e.preventDefault();
@@ -85,29 +85,29 @@ const Hero = () => {
                   <NavigationMenuContent className="glass backdrop-blur-md border border-white/10">
                     <div className="grid gap-3 p-4 w-[400px]">
                       <div className="grid grid-cols-2 gap-2">
-                        <Link 
-                          to="/skills" 
+                        <Link
+                          to="/skills"
                           className="block p-3 rounded-lg hover:bg-white/10 transition-colors"
                         >
                           <div className="text-sm font-medium text-white">Skills & Technologies</div>
                           <div className="text-xs text-gray-400">Technical expertise</div>
                         </Link>
-                        <Link 
-                          to="/experience" 
+                        <Link
+                          to="/experience"
                           className="block p-3 rounded-lg hover:bg-white/10 transition-colors"
                         >
                           <div className="text-sm font-medium text-white">Experience</div>
                           <div className="text-xs text-gray-400">Professional journey</div>
                         </Link>
-                        <Link 
-                          to="/certifications" 
+                        <Link
+                          to="/certifications"
                           className="block p-3 rounded-lg hover:bg-white/10 transition-colors"
                         >
                           <div className="text-sm font-medium text-white">Certifications</div>
                           <div className="text-xs text-gray-400">Professional credentials</div>
                         </Link>
-                        <Link 
-                          to="/recognitions" 
+                        <Link
+                          to="/recognitions"
                           className="block p-3 rounded-lg hover:bg-white/10 transition-colors"
                         >
                           <div className="text-sm font-medium text-white">Awards</div>
@@ -126,29 +126,29 @@ const Hero = () => {
                   <NavigationMenuContent className="glass backdrop-blur-md border border-white/10">
                     <div className="grid gap-3 p-4 w-[450px]">
                       <div className="grid grid-cols-2 gap-2">
-                        <Link 
-                          to="/community" 
+                        <Link
+                          to="/community"
                           className="block p-3 rounded-lg hover:bg-white/10 transition-colors"
                         >
                           <div className="text-sm font-medium text-white">Community Building</div>
                           <div className="text-xs text-gray-400">1500+ members impacted</div>
                         </Link>
-                        <Link 
-                          to="/speaker-sessions" 
+                        <Link
+                          to="/speaker-sessions"
                           className="block p-3 rounded-lg hover:bg-white/10 transition-colors"
                         >
                           <div className="text-sm font-medium text-white">Speaker Sessions</div>
                           <div className="text-xs text-gray-400">25+ sessions delivered</div>
                         </Link>
-                        <Link 
-                          to="/events-conferences" 
+                        <Link
+                          to="/events-conferences"
                           className="block p-3 rounded-lg hover:bg-white/10 transition-colors"
                         >
                           <div className="text-sm font-medium text-white">Events & Conferences</div>
                           <div className="text-xs text-gray-400">15+ events organized</div>
                         </Link>
-                        <Link 
-                          to="/ar-projects" 
+                        <Link
+                          to="/ar-projects"
                           className="block p-3 rounded-lg hover:bg-white/10 transition-colors"
                         >
                           <div className="text-sm font-medium text-white">AR Projects</div>
@@ -167,15 +167,15 @@ const Hero = () => {
                   <NavigationMenuContent className="glass backdrop-blur-md border border-white/10">
                     <div className="grid gap-3 p-4 w-[350px]">
                       <div className="grid grid-cols-1 gap-2">
-                        <Link 
-                          to="/ai-films" 
+                        <Link
+                          to="/ai-films"
                           className="block p-3 rounded-lg hover:bg-white/10 transition-colors"
                         >
                           <div className="text-sm font-medium text-white">AI Films & Creations</div>
-                          <div className="text-xs text-gray-400">12+ AI films created</div>
+                          <div className="text-xs text-gray-400">20+ AI films created</div>
                         </Link>
-                        <Link 
-                          to="/gallery" 
+                        <Link
+                          to="/gallery"
                           className="block p-3 rounded-lg hover:bg-white/10 transition-colors"
                         >
                           <div className="text-sm font-medium text-white">Personal Gallery</div>
@@ -188,8 +188,8 @@ const Hero = () => {
 
                 {/* Projects */}
                 <NavigationMenuItem>
-                  <NavigationMenuLink 
-                    href="#projects" 
+                  <NavigationMenuLink
+                    href="#projects"
                     className="text-white hover:text-blue-300 transition-colors duration-300"
                     onClick={(e) => {
                       e.preventDefault();
@@ -202,8 +202,8 @@ const Hero = () => {
 
                 {/* Contact */}
                 <NavigationMenuItem>
-                  <NavigationMenuLink 
-                    href="#contact" 
+                  <NavigationMenuLink
+                    href="#contact"
                     className="text-white hover:text-blue-300 transition-colors duration-300"
                     onClick={(e) => {
                       e.preventDefault();
@@ -258,29 +258,29 @@ const Hero = () => {
                 <div className="border-l-2 border-blue-400 pl-4">
                   <div className="text-blue-300 font-semibold mb-2">Professional Overview</div>
                   <div className="grid grid-cols-2 gap-2">
-                    <Link 
-                      to="/skills" 
+                    <Link
+                      to="/skills"
                       className="text-sm text-gray-300 hover:text-white transition-colors"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Skills & Technologies
                     </Link>
-                    <Link 
-                      to="/experience" 
+                    <Link
+                      to="/experience"
                       className="text-sm text-gray-300 hover:text-white transition-colors"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Experience
                     </Link>
-                    <Link 
-                      to="/certifications" 
+                    <Link
+                      to="/certifications"
                       className="text-sm text-gray-300 hover:text-white transition-colors"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Certifications
                     </Link>
-                    <Link 
-                      to="/recognitions" 
+                    <Link
+                      to="/recognitions"
                       className="text-sm text-gray-300 hover:text-white transition-colors"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
@@ -293,29 +293,29 @@ const Hero = () => {
                 <div className="border-l-2 border-green-400 pl-4">
                   <div className="text-green-300 font-semibold mb-2">Community Contributions</div>
                   <div className="grid grid-cols-1 gap-2">
-                    <Link 
-                      to="/community" 
+                    <Link
+                      to="/community"
                       className="text-sm text-gray-300 hover:text-white transition-colors"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Community Building
                     </Link>
-                    <Link 
-                      to="/speaker-sessions" 
+                    <Link
+                      to="/speaker-sessions"
                       className="text-sm text-gray-300 hover:text-white transition-colors"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Speaker Sessions
                     </Link>
-                    <Link 
-                      to="/events-conferences" 
+                    <Link
+                      to="/events-conferences"
                       className="text-sm text-gray-300 hover:text-white transition-colors"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Events & Conferences
                     </Link>
-                    <Link 
-                      to="/ar-projects" 
+                    <Link
+                      to="/ar-projects"
                       className="text-sm text-gray-300 hover:text-white transition-colors"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
@@ -328,15 +328,15 @@ const Hero = () => {
                 <div className="border-l-2 border-purple-400 pl-4">
                   <div className="text-purple-300 font-semibold mb-2">Creative Works</div>
                   <div className="grid grid-cols-1 gap-2">
-                    <Link 
-                      to="/ai-films" 
+                    <Link
+                      to="/ai-films"
                       className="text-sm text-gray-300 hover:text-white transition-colors"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       AI Films & Creations
                     </Link>
-                    <Link 
-                      to="/gallery" 
+                    <Link
+                      to="/gallery"
                       className="text-sm text-gray-300 hover:text-white transition-colors"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
@@ -402,10 +402,10 @@ const Hero = () => {
             Jishanahmed AR Shaikh
           </h1>
           <p className="text-xl md:text-2xl text-blue-300 font-semibold mb-4">
-          AI & Cloud Engineer | Full Stack Developer | AI Film & Tech Creator | Product Growth
+            AI & Cloud Engineer | Full Stack Developer | AI Film Maker
           </p>
           <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            Experienced Technology Visionary with expertise in AI Engineering and Cloud Computing with proven 
+            Experienced Technology Visionary with expertise in AI Engineering and Cloud Computing with proven
             experience in Business Leadership, Operations and Community Development.
             Passionate about driving innovation through technological and business skills
             to foster individual and collective growth.
