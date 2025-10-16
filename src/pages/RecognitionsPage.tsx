@@ -109,12 +109,36 @@ const recognitions = [
     category: "Competition"
   },
   {
-    title: "Hackathon Mentor & Judge",
-    organization: "Multiple Organizations",
+    title: "Mentor - BNB Hack Bombay 2025",
+    organization: "BNB Hack Bombay",
     year: "2025",
-    description: "Served as mentor and judge at prestigious hackathons including BNB Hack Bombay 2025, Cognition GameJam 2025, HackNova 2025, and Smart India Hackathon 2025.",
+    description: "Served as technical mentor guiding participants in blockchain and fintech innovations, providing expertise in full-stack development and AI integration.",
     icon: <Star className="w-6 h-6" />,
-    category: "Leadership"
+    category: "Mentorship"
+  },
+  {
+    title: "Mentor & Judge - Cognition GameJam 2025",
+    organization: "SIES GST",
+    year: "2025",
+    description: "Mentored game development teams and judged innovative gaming solutions, focusing on Unity, AR/VR technologies, and creative game design principles.",
+    icon: <Star className="w-6 h-6" />,
+    category: "Mentorship"
+  },
+  {
+    title: "Judge - HackNova 2025",
+    organization: "CSA APSIT",
+    year: "2025",
+    description: "Evaluated innovative technology solutions and provided technical guidance to participants, focusing on cloud architecture, AI/ML implementations, and scalable system design.",
+    icon: <Star className="w-6 h-6" />,
+    category: "Judging"
+  },
+  {
+    title: "Evaluator - Smart India Hackathon 2025",
+    organization: "Ministry of Education's Innovation Cell, AICTE, India",
+    year: "2025",
+    description: "Official evaluator for India's largest hackathon organized by AICTE, assessing solutions for national challenges in education, healthcare, and smart governance.",
+    icon: <Star className="w-6 h-6" />,
+    category: "Evaluation"
   }
 ];
 

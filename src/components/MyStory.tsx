@@ -46,7 +46,7 @@ const MyStory = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-3xl blur-xl"/>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-3xl blur-xl" />
             <img
               src="/my-images/jishanahmed.png"
               alt="Jishanahmed Profile"

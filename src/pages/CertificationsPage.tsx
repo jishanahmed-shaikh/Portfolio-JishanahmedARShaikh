@@ -8,7 +8,7 @@ const certifications = [
     title: "500+ Skill Badges on Google Cloud SkillBoost",
     issuer: "Google Cloud Skills Boost",
     date: "2024-2025",
-    image: "https://www.gstatic.com/devrel-devsite/prod/v2210deb8920cd4a55bd580441aa58e7853c206539e5ca8fb3f1bf18e9c8db9ab0/cloud/images/cloud-logo.svg",
+    image: "https://logos-world.net/wp-content/uploads/2021/02/Google-Cloud-Logo.png",
     description: "Earned over 500 skill badges demonstrating comprehensive expertise across Google Cloud services, AI/ML, cloud architecture, and advanced cloud technologies. Top 1% of learners globally."
   },
   {
@@ -29,14 +29,14 @@ const certifications = [
     title: "Developing GenAI Apps with Gemini & Streamlit",
     issuer: "Google Cloud Skills Boost",
     date: "2024",
-    image: "https://www.gstatic.com/devrel-devsite/prod/v2210deb8920cd4a55bd580441aa58e7853c206539e5ca8fb3f1bf18e9c8db9ab0/cloud/images/cloud-logo.svg",
+    image: "https://logos-world.net/wp-content/uploads/2021/02/Google-Cloud-Logo.png",
     description: "Specialized certification for building generative AI applications using Google's Gemini AI model and Streamlit framework for creating interactive AI-powered web applications."
   },
   {
     title: "Prompt Design in Vertex AI",
     issuer: "Google Cloud Skills Boost",
     date: "2024",
-    image: "https://www.gstatic.com/devrel-devsite/prod/v2210deb8920cd4a55bd580441aa58e7853c206539e5ca8fb3f1bf18e9c8db9ab0/cloud/images/cloud-logo.svg",
+    image: "https://logos-world.net/wp-content/uploads/2021/02/Google-Cloud-Logo.png",
     description: "Advanced certification focusing on prompt engineering and design patterns in Vertex AI, covering best practices for AI model interaction and optimization."
   },
   {
